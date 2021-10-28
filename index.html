@@ -1,12 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <title>Alfredo Sánchez - Front-End Developer</title>
 </head>
 <body>
-    
+    <!-- header -->
+    <header class="header">
+        <div class="container-header">
+            <div class="container-header__title">
+                <a class="container-header__title-img" href="alfred3ks.github.io"><img
+                        src="./assets/img/logo-alfredo-sanchez.svg" alt="Alfredo Sánchez developer"></a>
+                <h1 class="container-header__title-name"><a href="alfred3ks.github.io">Alfredo <span>Sánchez</span></a>
+                </h1>
+            </div>
+
+            <nav class="container-header__nav" id="list">
+                <ul id="list__hide">
+                    <li><a href="#sobre_mi" id="about">Sobre mi</a></li>
+                    <li><a href="#proyectos" id="project">Proyectos</a></li>
+                    <li><a href="mailto:alfred3ks@protonmail.com">Contacto</a></li>
+                    <li class="container-header__nav-latest"><a href="#" target="blank">Currículum</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button type="button" class="container-header__button" id="button">
+                <div class="container-header__button-1"></div>
+                <div class="container-header__button-2"></div>
+                <div class="container-header__button-3"></div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- About -->
+        <section>
+            <div class="about">
+                <div class="about-container">
+                    <div class="about-container__header">
+                        <div class="about-container__header-img"></div>
+                        <h2 class="about-container__header-title">Hola, soy <span>Alfredo Sánchez</span></h2>
+                        <p class="about-container__header-desc">Construyo proyectos para la web.</p>
+                    </div>
+
+                    <div class="about-container__text">
+                        <p> Soy desarrollador Front-End. Actualmente estoy enfocado y disfruto construyendo proyectos
+                            para la web usando tecnologías como HTML5, CSS3, JavaScript y Framework como React. Mi
+                            interes para este mundo nacío por la curiosidad de saber como funcionan los proyectos que
+                            viven en internet, su interior y como fueron creados. En la actualidad trabajo más en el
+                            Front-End pero empiezo a experimentar con el Back-End.</p>
+                        <div class="about-container__contact">
+                            <a href="mailto:alfred3ks@protonmail.com"><i class="far fa-envelope"></i></a>
+                            <a href="https://github.com/alfred3ks" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://twitter.com/alfred3ks" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="http://linkedin.com/in/alfredo-s%C3%A1nchez-900504211" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project -->
+        <h2 class="title-card" id="proyectos">Proyectos</h2>
+
+        <!-- Project card -->
+        <section>
+                    <!-- Batatabit -->
+            <div class="card">
+                <div class="card-container">
+                    <div class="card-container__img">
+                        <img src="./assets/img/batatabit-desktop.png" alt="pantalla batatabit">
+                    </div>
+                    <div class="card-container__description">
+                        <p>#HTML</p>
+                        <p>#CSS</p>
+                        <p>#Responsive</p>
+                    </div>
+                    <h2 class="card-container__title">Batatabit</h2>
+                    <p class="card-container__text"> Cryptocurrency landing page project. Proyecto construido usando las
+                        mejores prácticas en HTML, CCS y Mobile First.</p>
+                    <div class="card-container__button">
+                        <a href="https://alfred3ks.github.io/batatabit/" target="_blank"><i
+                                class="fas fa-globe-europe"></i></a>
+                        <a href="https://github.com/alfred3ks/batatabit" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        <!-- CSS Grid Image -->
+            <div class="card">
+                <div class="card-container">
+                    <div class="card-container__img">
+                        <img src="./assets/img/galery-grid.png" alt="pantalla galeria de imagenes">
+                    </div>
+                    <div class="card-container__description">
+                        <p>#HTML</p>
+                        <p>#CSS</p>
+                        <p>#Responsive</p>
+                    </div>
+                    <h2 class="card-container__title">Grid Image</h2>
+                    <p class="card-container__text"> Como implementar CSS Grid en una galeria de imágenes.</p>
+                    <div class="card-container__button">
+                        <a href="https://alfred3ks.github.io/gallery-grid/" target="_blank"><i class="fas fa-globe-europe"></i></a>
+                        <a href="https://github.com/alfred3ks/gallery-grid" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h2 class="footer-container__title">Alfredo Sánchez 2021</h2>
+            <div class="footer-container__contact">
+                <a href="mailto:alfred3ks@protonmail.com"><i class="far fa-envelope"></i></a>
+                <a href="https://github.com/alfred3ks" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/alfred3ks" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="http://linkedin.com/in/alfredo-s%C3%A1nchez-900504211" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
 </body>
 </html>
