@@ -1,0 +1,49 @@
+:root {
+    --color-primary: #0d264d;
+    --color-secondary: #0A192F;
+    --color-text:gold;
+}
+
+.container-header__button {
+    display: none;
+}
+
+/* Container title */
+.container-header__title {
+    width: 290px;
+}
+
+.container-header__title-name {
+    display: block;
+    font-size: 2.4rem;
+    line-height: 1.8rem;
+}
+
+.container-header__title-name a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.container-header__title-name a span {
+    color: var(--color-text);
+}
+
+.container-header__nav {
+    position: static;
+    width: 400px;
+    height: 50px;
+}
+
+.container-header__nav ul {
+    height: 50px;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-primary);
+}
+
+/* Estilo que hace aparecer el listado  menu */
+.change__menu {
+    transform: translateX(0vw);
+}
