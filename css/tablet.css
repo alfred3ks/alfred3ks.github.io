@@ -4,37 +4,37 @@
     --color-text:gold;
 }
 
-.container-header__button {
+.header-button {
     display: none;
 }
 
 /* Container title */
-.container-header__title {
+.header-title {
     width: 290px;
 }
 
-.container-header__title-name {
+.header-title__name {
     display: block;
     font-size: 2.4rem;
     line-height: 1.8rem;
 }
 
-.container-header__title-name a {
+.header-title__name a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.container-header__title-name a span {
+.header-title__name a span {
     color: var(--color-text);
 }
 
-.container-header__nav {
+.header-nav{
     position: static;
     width: 400px;
     height: 50px;
 }
 
-.container-header__nav ul {
+.header-nav ul {
     height: 50px;
     padding: 0;
     flex-direction: row;
