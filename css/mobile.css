@@ -5,6 +5,10 @@
     --color-text: gold;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-secondary);
 }

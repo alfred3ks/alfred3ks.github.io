@@ -7,4 +7,4 @@ const sobreMi = ()=>{
         behavior:'smooth'
     })
 }
-about.addEventListener('click', sobreMi);
+//about.addEventListener('click', sobreMi);
