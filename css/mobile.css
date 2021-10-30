@@ -311,15 +311,15 @@ main {
 }
 
 .footer-container__title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #FFFFFF;
     margin-top: 20px;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 
 .footer-container__contact {
-    width: 80%;
-    margin-bottom: 20px;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;

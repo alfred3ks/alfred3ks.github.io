@@ -1,2 +1,32 @@
+/* about */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.about-container__header {
+    width: 50%;
+    flex-direction: column;
+}
+
+.about-container__text {
+    width: 50%;
+    margin-right: 50px;
+}
+
+/* footer */
+.footer-container {
+    flex-direction: row;
+    padding: 15px 70px;
+}
+
+.footer-container__contact {
+    width: 30%;
+}
+
+.footer-container__contact a {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
 

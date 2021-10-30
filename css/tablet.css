@@ -1,14 +1,9 @@
-:root {
-    --color-primary: #0d264d;
-    --color-secondary: #0A192F;
-    --color-text:gold;
-}
-
+/* header */
 .header-button {
     display: none;
 }
 
-/* Container title */
+/* header title */
 .header-title {
     width: 290px;
 }
@@ -40,7 +35,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
 }
 
 /* Estilo que hace aparecer el listado  menu */
