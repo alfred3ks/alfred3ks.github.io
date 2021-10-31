@@ -188,7 +188,8 @@ main {
     font-size: 1.8rem;
     line-height: 25px;
     color: #FFFFFF;
-        margin-bottom: 25px;
+    margin-bottom: 25px;
+    white-space: nowrap;
 }
 
 .about-container__text p {
@@ -314,7 +315,6 @@ main {
     font-size: 1.6rem;
     color: #FFFFFF;
     margin-top: 20px;
-    margin-bottom: 20px;
     white-space: nowrap;
 }
 
@@ -328,8 +328,4 @@ main {
 .footer-container__contact a {
     font-size: 2.5rem;
     color: #FFFFFF;
-}
-
-.add-padding {
-    padding-top: 90px;
 }

@@ -35,7 +35,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    /* background-color: var(--color-primary); */
 }
 
 /* Estilo que hace aparecer el listado  menu */

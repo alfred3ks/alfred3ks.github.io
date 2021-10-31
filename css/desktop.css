@@ -15,10 +15,22 @@
     margin-right: 50px;
 }
 
+/* Grid cards */
+.section-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-auto-rows: minmax(250px, 1fr);
+    gap: 20px;
+}
+
 /* footer */
 .footer-container {
     flex-direction: row;
     padding: 15px 70px;
+}
+
+.footer-container__title {
+    margin-bottom: 20px;
 }
 
 .footer-container__contact {
