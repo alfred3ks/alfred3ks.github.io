@@ -293,8 +293,9 @@ main {
 
 /* Footer */
 .footer {
-    width: 100%;
+    max-width: 1200px;
     min-width: 320px;
+    margin: 0 auto;
     height: auto;
     background-color: var(--color-secondary);
     padding:10px;
