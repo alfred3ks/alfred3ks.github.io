@@ -25,7 +25,7 @@ function mostrarHTML(){
         progressingHtml.style.width = counterHtml + '%';
         circleHtml.style.left = counterHtml + '%';
     }
-} ,20);
+} ,30);
 }
 
 function mostrarCSS(){
