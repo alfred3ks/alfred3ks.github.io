@@ -31,7 +31,7 @@
             <nav class="header-nav" id="list">
                 <ul id="list__hide">
                     <li><a href="#about_me" id="about">Sobre mi</a></li>
-                    <li><a href="#skill" id="skill">Skills</a></li>
+                    <li><a href="#skills-menu" id="">Skills</a></li>
                     <li><a href="#projects" id="project">Proyectos</a></li>
                     <li class="header-nav__latest"><a href="mailto:alfred3ks@protonmail.com">Contacto</a></li>
                 </ul>
@@ -57,11 +57,11 @@
                 </div>
 
                 <div class="about-container__text">
-                    <p> Soy desarrollador Front-End. Actualmente estoy enfocado y disfrutando construyendo proyectos
-                            para la web usando tecnologías como HTML5, CSS3, JavaScript y Framework como React. Mi
+                    <p> Soy desarrollador Frontend. Actualmente estoy enfocado y disfrutando construyendo proyectos
+                            para la web usando tecnologías como HTML5, CSS3, JavaScript y Framework como ReactJS. Mi
                             interes para este mundo nacío por la curiosidad de saber como funcionan los proyectos que
-                            viven en internet, su interior y como fueron creados. En la actualidad trabajo más en el
-                            Front-End pero empiezo a experimentar con el Back-End.</p>
+                            viven en internet, su funcionamiento interno y como fueron creados. En la actualidad trabajo más en el
+                            Frontend pero empiezo a experimentar con el Backend.</p>
                     <div class="about-container__contact">
                             <a href="mailto:alfred3ks@protonmail.com"><i class="far fa-envelope"></i></a>
                             <a href="https://github.com/alfred3ks" target="_blank"><i class="fab fa-github"></i></a>
@@ -73,9 +73,55 @@
             </div>
         </section>
 
+        <!-- Skills -->
+        <h2 class="skills-title" id="skills-menu">Skills</h2>
+        <section class="skills-container">
+            <div class="skill">
+                <h3 class="skill-title">Frontend</h3>
+
+                <!-- Skill HTML -->
+                <div class="skill-progress">
+                    <h6 class="skill-progress__title">HTML</h6>
+                    <div class="skill-progress__container">
+                        <div class="skill-progress__container-bar">
+                            <div class="progressing-bar" id="progressing-html">
+                            <span class="progressing-circle" id="circle-html"></span>
+                            </div>
+                        </div>
+                        <p class="skill-progress__container-percent" id="percent-html">0%</p>
+                    </div>
+                </div>
+                <!-- Skill CSS3 -->
+                <div class="skill-progress">
+                    <h6 class="skill-progress__title">CSS3</h6>
+                    <div class="skill-progress__container">
+                        <div class="skill-progress__container-bar">
+                            <div class="progressing-bar" id="progressing-css">
+                            <span class="progressing-circle" id="circle-css"></span>
+                            </div>
+                        </div>
+                        <p class="skill-progress__container-percent" id="percent-css">0%</p>
+                    </div>
+                </div>
+                <!-- Skill JAVASCRIPT -->
+                <div class="skill-progress">
+                    <h6 class="skill-progress__title">JAVASCRIPT</h6>
+                    <div class="skill-progress__container">
+                        <div class="skill-progress__container-bar">
+                            <div class="progressing-bar" id="progressing-js">
+                            <span class="progressing-circle" id="circle-js"></span>
+                            </div>
+                        </div>
+                        <p class="skill-progress__container-percent" id="percent-js">0%</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <!-- Project -->
         <!-- Project card -->
-        <h2 class="title-card" id="projects">Proyectos</h2>
+        <h2 class="card-title" id="projects">Proyectos</h2>
         <section class="section-projects" id="section-projects">
             <!-- Batatabit -->
             <div class="card">
@@ -136,6 +182,7 @@
     </footer>
 
     <script src="./js/hamburger.js"></script>
+    <script src="./js/skills.js"></script>
 
 </body>
 </html>
