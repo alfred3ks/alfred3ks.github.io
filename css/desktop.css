@@ -24,6 +24,15 @@
     padding: 35px 120px;
 }
 
+.skill-title {
+    margin-bottom: 30px;
+}
+
+.skill-progress {
+    margin: 10px auto;
+
+}
+
 /* Grid cards */
 .section-projects {
     display: grid;
