@@ -19,6 +19,11 @@
     margin-right: 50px;
 }
 
+/* Skills */
+.skill {
+    padding: 35px 120px;
+}
+
 /* Grid cards */
 .section-projects {
     display: grid;
