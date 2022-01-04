@@ -71,7 +71,9 @@ function mostrarRJ(){
     } ,30);
 }
 
-mostrarHTML();
-mostrarCSS();
-mostrarJS();
-mostrarRJ();
+// mostrarHTML();
+// mostrarCSS();
+// mostrarJS();
+// mostrarRJ();
+
+export { mostrarHTML, mostrarCSS, mostrarJS, mostrarRJ};
