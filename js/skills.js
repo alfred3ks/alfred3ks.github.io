@@ -1,18 +1,18 @@
-let numberHtml = document.getElementById('percent-html');
-let circleHtml = document.getElementById('circle-html');
-let progressingHtml= document.getElementById('progressing-html');
+let numberHtml = document.querySelector('#percent-html');
+let circleHtml = document.querySelector('#circle-html');
+let progressingHtml= document.querySelector('#progressing-html');
 
-let numberCss = document.getElementById('percent-css');
-let circleCss = document.getElementById('circle-css');
-let progressingCss= document.getElementById('progressing-css');
+let numberCss = document.querySelector('#percent-css');
+let circleCss = document.querySelector('#circle-css');
+let progressingCss= document.querySelector('#progressing-css');
 
-let numberJs = document.getElementById('percent-js');
-let circleJs = document.getElementById('circle-js');
-let progressingJs= document.getElementById('progressing-js');
+let numberJs = document.querySelector('#percent-js');
+let circleJs = document.querySelector('#circle-js');
+let progressingJs= document.querySelector('#progressing-js');
 
-let numberRj = document.getElementById('percent-rj');
-let circleRj = document.getElementById('circle-rj');
-let progressingRj= document.getElementById('progressing-rj');
+let numberRj = document.querySelector('#percent-rj');
+let circleRj = document.querySelector('#circle-rj');
+let progressingRj= document.querySelector('#progressing-rj');
 
 let counterHtml = 0;
 let counterCss = 0;
@@ -70,10 +70,5 @@ function mostrarRJ(){
         }
     } ,30);
 }
-
-// mostrarHTML();
-// mostrarCSS();
-// mostrarJS();
-// mostrarRJ();
 
 export { mostrarHTML, mostrarCSS, mostrarJS, mostrarRJ};

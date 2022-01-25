@@ -1,7 +1,7 @@
 // Obtenemos boton y lista
-const button = document.getElementById('button');
-const list= document.getElementById('list');
-const ul = document.getElementById('list__hide');
+const button = document.querySelector('#button');
+const list= document.querySelector('#list');
+const ul = document.querySelector('#list__hide');
 
 
 // Creamos la funcion para el menu hamburguesa
