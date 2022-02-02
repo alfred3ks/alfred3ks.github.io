@@ -244,7 +244,7 @@ main {
 
 .skill-progress {
     width: 100%;
-    margin: 30px auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     align-items: start;
