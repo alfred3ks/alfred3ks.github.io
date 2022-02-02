@@ -1,4 +1,4 @@
-const dato= document.getElementById('fecha');
+const dato = document.querySelector('#fecha');
 
 let fecha = new Date();
 let actual = fecha.getFullYear();
@@ -6,7 +6,5 @@ let actual = fecha.getFullYear();
 let cambiarAnnio = ()=>{
     dato.innerHTML = actual;
 }
-
-// cambiarAnnio();
 
 export default cambiarAnnio;
