@@ -16,19 +16,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <!-- Libreria AOS para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Alfredo Sánchez - Desarrollador web.</title>
 </head>
 <body>
     <!-- header -->
     <header class="header">
             <div class="header-title">
-                <a class="header-title__img" href="alfred3ks.github.io"><img
-                        src="./assets/img/logo-alfredo-sanchez.svg" alt="Logo Alfredo Sánchez developer" rel="noopener noreferrer"></a>
+                <a class="header-title__img" href="alfred3ks.github.io" data-aos="flip-left">
+                    <img src="./assets/img/logo-alfredo-sanchez.svg" alt="Logo Alfredo Sánchez developer" rel="noopener noreferrer"></a>
                 <h1 class="header-title__name"><a href="alfred3ks.github.io">Alfredo <span>Sánchez</span></a>
                 </h1>
             </div>
 
-            <nav class="header-nav" id="list">
+            <nav class="header-nav" id="list" data-aos="fade-left"data-aos-anchor="#example-anchor"data-aos-offset="500"data-aos-duration="500">
                 <ul id="list__hide">
                     <li><a href="#about_me" id="about">SOBRE MI</a></li>
                     <li><a href="#skills-menu" id="">SKILLS</a></li>
@@ -73,7 +77,7 @@
         </section>
 
         <!-- Skills -->
-        <h2 class="skills-title" id="skills-menu">Skills</h2>
+        <h2 class="skills-title" id="skills-menu" data-aos="fade-up">Skills</h2>
         <section class="skills-container">
             <div class="skill">
                 <h3 class="skill-title">Frontend</h3>
@@ -132,7 +136,7 @@
 
         <!-- Project -->
         <!-- Project card -->
-        <h2 class="card-title" id="projects">Proyectos</h2>
+        <h2 class="card-title" id="projects" data-aos="fade-up">Proyectos</h2>
         <section class="section-projects" id="section-projects">
             <!-- Batatabit -->
             <div class="card">
@@ -192,6 +196,10 @@
     </footer>
 
     <script src="./js/app.js" type="module"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
 </body>
 </html>
