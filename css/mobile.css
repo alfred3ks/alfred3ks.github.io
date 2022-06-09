@@ -8,6 +8,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 95px;
+    /* scroll-padding-top: 85px; */
 
 }
 
@@ -145,7 +146,8 @@ main {
     height: auto;
     background-color: var(--color-secondary);
     padding:10px;
-    padding-top: 13px;
+    /* padding-top: 13px; */
+    padding-top: 0px;
 }
 
 .about-container {
