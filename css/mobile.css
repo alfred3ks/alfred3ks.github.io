@@ -195,10 +195,12 @@ main {
 }
 
 .about-container__text p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 25px;
     color: #FFFFFF;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    text-align: justify;
+    /* text-justify: inter-cluster; */
 }
 
 .about-container__contact {
