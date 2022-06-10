@@ -408,13 +408,14 @@ main {
     font-size: 1.6rem;
     color: #FFFFFF;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     white-space: nowrap;
 }
 
 .footer-container__contact {
     width: 60%;
     display: flex;
+    margin-top: 10px;
     justify-content: space-between;
     align-items: center;
 }
