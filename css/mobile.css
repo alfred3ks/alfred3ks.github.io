@@ -205,6 +205,7 @@ main {
 
 .about-container__contact {
     width: 180px;
+    margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
