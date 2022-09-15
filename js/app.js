@@ -1,5 +1,5 @@
 import ejecutarCambio from "./hamburger.js";
-import {mostrarHTML, mostrarCSS, mostrarJS, mostrarRJ} from "./skills.js";
+import { mostrarHTML, mostrarCSS, mostrarJS, mostrarRJ } from "./skills.js";
 import cambiarAnnio from "./fecha.js";
 
 ejecutarCambio();
@@ -10,4 +10,3 @@ mostrarJS();
 mostrarRJ();
 
 cambiarAnnio();
-
