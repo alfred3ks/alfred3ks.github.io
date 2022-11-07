@@ -1,18 +1,18 @@
-let numberHtml = document.querySelector('#percent-html');
-let circleHtml = document.querySelector('#circle-html');
-let progressingHtml= document.querySelector('#progressing-html');
+let numberHtml = document.querySelector('#percent__html');
+let circleHtml = document.querySelector('#circle__html');
+let progressingHtml = document.querySelector('#progressing__html');
 
-let numberCss = document.querySelector('#percent-css');
-let circleCss = document.querySelector('#circle-css');
-let progressingCss= document.querySelector('#progressing-css');
+let numberCss = document.querySelector('#percent__css');
+let circleCss = document.querySelector('#circle__css');
+let progressingCss = document.querySelector('#progressing__css');
 
-let numberJs = document.querySelector('#percent-js');
-let circleJs = document.querySelector('#circle-js');
-let progressingJs= document.querySelector('#progressing-js');
+let numberJs = document.querySelector('#percent__js');
+let circleJs = document.querySelector('#circle__js');
+let progressingJs = document.querySelector('#progressing__js');
 
-let numberRj = document.querySelector('#percent-rj');
-let circleRj = document.querySelector('#circle-rj');
-let progressingRj= document.querySelector('#progressing-rj');
+let numberRj = document.querySelector('#percent__rj');
+let circleRj = document.querySelector('#circle__rj');
+let progressingRj = document.querySelector('#progressing__rj');
 
 let counterHtml = 0;
 let counterCss = 0;
@@ -20,55 +20,55 @@ let counterJs = 0;
 let counterRj = 0;
 
 
-function mostrarHTML(){
-    setInterval(()=>{
-    if(counterHtml == 90){
-        clearInterval();
-    } else {
-        counterHtml  += 1;
-        numberHtml.innerHTML = counterHtml + "%";
-        progressingHtml.style.width = counterHtml + '%';
-        circleHtml.style.left = counterHtml + '%';
-    }
-} ,30);
-}
-
-function mostrarCSS(){
-    setInterval(()=>{
-        if(counterCss == 75){
+function mostrarHTML() {
+    setInterval(() => {
+        if (counterHtml == 90) {
             clearInterval();
         } else {
-            counterCss  += 1;
-            numberCss.innerHTML = counterCss  + "%";
+            counterHtml += 1;
+            numberHtml.innerHTML = counterHtml + "%";
+            progressingHtml.style.width = counterHtml + '%';
+            circleHtml.style.left = counterHtml + '%';
+        }
+    }, 30);
+}
+
+function mostrarCSS() {
+    setInterval(() => {
+        if (counterCss == 75) {
+            clearInterval();
+        } else {
+            counterCss += 1;
+            numberCss.innerHTML = counterCss + "%";
             progressingCss.style.width = counterCss + '%';
-            circleCss.style.left = counterCss  + '%';
+            circleCss.style.left = counterCss + '%';
         }
-    } ,30);
+    }, 30);
 }
 
-function mostrarJS(){
-    setInterval(()=>{
-        if(counterJs == 55){
+function mostrarJS() {
+    setInterval(() => {
+        if (counterJs == 55) {
             clearInterval();
         } else {
-            counterJs  += 1;
-            numberJs.innerHTML = counterJs  + "%";
+            counterJs += 1;
+            numberJs.innerHTML = counterJs + "%";
             progressingJs.style.width = counterJs + '%';
-            circleJs.style.left = counterJs  + '%';
+            circleJs.style.left = counterJs + '%';
         }
-    } ,30);
+    }, 30);
 }
-function mostrarRJ(){
-    setInterval(()=>{
-        if(counterRj == 30){
+function mostrarRJ() {
+    setInterval(() => {
+        if (counterRj == 30) {
             clearInterval();
         } else {
-            counterRj  += 1;
-            numberRj.innerHTML = counterRj  + "%";
+            counterRj += 1;
+            numberRj.innerHTML = counterRj + "%";
             progressingRj.style.width = counterRj + '%';
-            circleRj.style.left = counterRj  + '%';
+            circleRj.style.left = counterRj + '%';
         }
-    } ,30);
+    }, 30);
 }
 
-export { mostrarHTML, mostrarCSS, mostrarJS, mostrarRJ};
+export { mostrarHTML, mostrarCSS, mostrarJS, mostrarRJ };

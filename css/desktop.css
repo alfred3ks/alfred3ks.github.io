@@ -1,57 +1,56 @@
 .main {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 /* about */
-.about-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.about__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.about-container__header {
-    width: 50%;
-    flex-direction: column;
+.about__container-header {
+  width: 50%;
+  flex-direction: column;
 }
 
-.about-container__text {
-    width: 50%;
-    margin-right: 50px;
+.about__container-text {
+  width: 50%;
+  margin-right: 50px;
 }
 
 /* Skills */
 .skill {
-    padding: 35px 120px;
+  padding: 35px 120px;
 }
 
-.skill-title {
-    margin-bottom: 30px;
+.skill__title {
+  margin-bottom: 30px;
 }
 
 /* Grid cards */
-.section-projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    grid-auto-rows: minmax(250px, 1fr);
-    gap: 20px;
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-auto-rows: minmax(250px, 1fr);
+  gap: 20px;
 }
 
 /* footer */
-.footer-container {
-    flex-direction: row;
-    padding: 15px 70px;
+.footer__container {
+  flex-direction: row;
+  padding: 15px 70px;
 }
 
-.footer-container__title {
-    margin-bottom: 20px;
+.footer__container-title {
+  margin-bottom: 20px;
 }
 
-.footer-container__contact {
-    width: 30%;
+.footer__container-contact {
+  width: 30%;
 }
 
-.footer-container__contact a {
-    font-size: 2.5rem;
-    color: #FFFFFF;
+.footer__container-contact a {
+  font-size: 2.5rem;
+  color: #ffffff;
 }
-

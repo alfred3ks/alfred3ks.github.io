@@ -1,43 +1,43 @@
 /* header */
-.header-button {
-    display: none;
+.header__button {
+  display: none;
 }
 
 /* header title */
-.header-title {
-    width: 290px;
+.header__title {
+  width: 290px;
 }
 
-.header-title__name {
-    display: block;
-    font-size: 2.8rem;
-    line-height: 1.8rem;
+.header__title-name {
+  display: block;
+  font-size: 2.8rem;
+  line-height: 1.8rem;
 }
 
-.header-title__name a {
-    text-decoration: none;
-    color: #FFFFFF;
+.header__title-name a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.header-title__name a span {
-    color: var(--color-text);
+.header__title-name a span {
+  color: var(--color-text);
 }
 
-.header-nav{
-    position: static;
-    width: 400px;
-    height: 50px;
+.header__nav {
+  position: static;
+  width: 400px;
+  height: 50px;
 }
 
-.header-nav ul {
-    height: 50px;
-    padding: 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.header__nav ul {
+  height: 50px;
+  padding: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* Estilo que hace aparecer el listado  menu */
 .change__menu {
-    transform: translateX(0vw);
+  transform: translateX(0vw);
 }
