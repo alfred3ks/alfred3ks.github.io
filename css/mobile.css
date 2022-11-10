@@ -315,7 +315,6 @@ main {
 .card {
   width: 100%;
   min-width: 320px;
-  height: auto;
   background-color: var(--color-secondary);
   padding: 10px;
   padding-top: 13px;
