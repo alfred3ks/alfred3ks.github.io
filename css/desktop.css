@@ -16,7 +16,16 @@
 
 .about__container-text {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
   margin-right: 50px;
+}
+
+.about__container-contact {
+  margin-top: 35px;
 }
 
 /* Skills */

@@ -141,7 +141,6 @@ main {
 .about {
   width: 100%;
   min-width: 320px;
-  height: auto;
   background-color: var(--color-secondary);
   padding: 10px;
   padding-top: 0px;
@@ -165,11 +164,6 @@ main {
 .about__container-header--img {
   width: 180px;
   height: 180px;
-  border-radius: 50%;
-  background-image: url("../assets/img/logo-alfredo-sanchez.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -178,6 +172,7 @@ main {
   font-size: 2.2rem;
   font-weight: 400;
   color: #ffffff;
+  margin-bottom: 5px;
 }
 
 .about__container-header--title span {
@@ -188,8 +183,12 @@ main {
   font-size: 1.8rem;
   line-height: 25px;
   color: #ffffff;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   white-space: nowrap;
+}
+
+.about__container-text {
+  padding: 5px;
 }
 
 .about__container-text p {
@@ -203,7 +202,7 @@ main {
 .about__container-contact {
   width: 180px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -403,7 +402,7 @@ main {
 }
 
 .footer__container-contact {
-  width: 60%;
+  width: 50%;
   display: flex;
   margin-top: 10px;
   justify-content: space-between;
