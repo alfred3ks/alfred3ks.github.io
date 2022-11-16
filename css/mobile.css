@@ -403,6 +403,7 @@ main {
 
 .footer__container-contact {
   width: 50%;
+  width: 180px;
   display: flex;
   margin-top: 10px;
   justify-content: space-between;
