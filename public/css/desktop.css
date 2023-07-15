@@ -2,6 +2,12 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* Header */
+.header {
+  max-width: 1200px;
+}
+
 /* about */
 .about__container {
   display: flex;
