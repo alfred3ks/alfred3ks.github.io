@@ -1,0 +1,115 @@
+/* About */
+.about {
+  width: 100%;
+  min-width: 300px;
+  padding: 10px;
+  padding-top: 0;
+}
+
+.about__container {
+  background-color: var(--primary-color);
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.about__container-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about__container-header--img {
+  width: 180px;
+  height: 180px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.about__container-header--title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--text-secondary-color);
+  margin-bottom: 5px;
+}
+
+.about__container-header--title span {
+  color: var(--text-primary-color);
+}
+
+.about__container-header--desc {
+  font-size: 1.8rem;
+  line-height: 25px;
+  color: var(--text-secondary-color);
+  margin-bottom: 15px;
+  white-space: nowrap;
+}
+
+.about__container-text {
+  padding: 5px;
+}
+
+.about__container-text p {
+  font-size: 1.6rem;
+  line-height: 25px;
+  color: var(--text-secondary-color);
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.about__container-contact {
+  width: 50%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__container-contact a {
+  font-size: 2.5rem;
+  color: var(--text-secondary-color);
+}
+
+/* Media queries */
+/* Tablet */
+@media screen and (width >= 768px) {
+  .about__container-contact {
+    width: 25%;
+  }
+}
+
+/* Desktop */
+@media screen and (width >= 1024px) {
+  .about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .about__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about__container-header {
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .about__container-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+
+  .about__container-contact {
+    width: 50%;
+  }
+}

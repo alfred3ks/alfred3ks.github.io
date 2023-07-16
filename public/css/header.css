@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 10px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -79,7 +79,7 @@
   z-index: 2;
   top: 85px;
   right: -77vw;
-  background-color: var(--primary--color);
+  background-color: var(--primary-color);
   transition: transform 0.7s ease;
 }
 
@@ -99,16 +99,6 @@
   font-size: 1.6rem;
   text-decoration: none;
   color: var(--text-secondary-color);
-}
-
-.header__nav ul a:hover {
-  color: var(--text-secondary-color);
-}
-
-.header__nav-latest {
-  border: var(--text-primary-color) solid 1px;
-  border-radius: 4px;
-  padding: 10px;
 }
 
 /* Estilo que hace aparecer el listado  menu */
@@ -169,5 +159,15 @@
 @media screen and (width >= 1024px) {
   .header {
     max-width: 1200px;
+  }
+
+  .header__nav ul a:hover {
+    color: var(--text-primary-color);
+  }
+
+  .header__nav-latest {
+    border: var(--text-primary-color) solid 1px;
+    border-radius: 4px;
+    padding: 10px;
   }
 }
