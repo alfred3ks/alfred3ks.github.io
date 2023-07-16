@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Open graph -->
+  <meta property="og:title" content="Alfredo Sánchez - Desarrollador Web.">
+  <meta property="og:description"
+    content="En este portfolio encontraras información sobre mi, mís habilidades y los trabajos que he realizado.">
+  <meta property="og:image"
+    content="https://github.com/alfred3ks/alfred3ks.github.io/blob/main/public/assets/img/img-open-graph.png?raw=true">
+  <!-- Open graph de twitter -->
+  <meta property="twitter:card" content="summary" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./public/assets/img/favicon.svg" type="image/x-icon" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./public/css/reset.css" />
+  <link rel="stylesheet" href="./public/css/common.css">
+  <link rel="stylesheet" href="./public/css/header.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/0d46cb983a.js" crossorigin="anonymous"></script>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet" />
+  <title>Alfredo Sánchez - Desarrollador Web.</title>
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="header__title">
+      <a class="header__title-img" href="alfred3ks.github.io">
+        <img src="./public/assets/img/logo-alfredo-sanchez.svg" alt="Logo Alfredo Sánchez developer"
+          rel="noopener noreferrer" />
+      </a>
+      <h1 class="header__title-name">
+        <a href="alfred3ks.github.io">Alfredo <span>Sánchez</span></a>
+      </h1>
+    </div>
+
+    <nav class="header__nav" id="list">
+      <ul id="list__hide">
+        <li><a href="#about__me" id="about">SOBRE MI</a></li>
+        <li><a href="#skills__menu" id="">SKILLS</a></li>
+        <li><a href="#projects" id="project">PROYECTOS</a></li>
+        <li class="header__nav-latest">
+          <a href="mailto:alfred3ks@protonmail.com">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Menu hamburguesa -->
+    <button type="button" class="header__button" id="button">
+      <div class="header__button-1"></div>
+      <div class="header__button-2"></div>
+      <div class="header__button-3"></div>
+    </button>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- About -->
+    <section class="about" id="about__me">
+      <div class="about__container">
+        <div class="about__container-header">
+          <div class="about__container-header--img">
+            <img src="./public/assets/img/logo-alfredo-sanchez.svg" alt="logo-alfredo-sanchez" />
+          </div>
+          <!-- <div class="about__container-header--img"></div> -->
+          <h2 class="about__container-header--title">
+            Hola, soy <span>Alfredo Sánchez</span>
+          </h2>
+          <p class="about__container-header--desc">Desarrollador Web.</p>
+          <p class="about__container-header--desc">
+            Construyo proyectos para la web.
+          </p>
+        </div>
+
+        <div class="about__container-text">
+          <p>
+            Actualmente estoy enfocado y disfrutando construyendo proyectos
+            para la web usando tecnologías como HTML5, CSS3, JavaScript,
+            Frameworks y Librerias como React.js.
+          </p>
+          <p>
+            Mi interés para este mundo nació por la curiosidad de saber como
+            funcionan los proyectos que viven en internet, su funcionamiento
+            interno y como fueron creados.
+          </p>
+          <p>
+            En la actualidad trabajo más en el Frontend pero empiezo a
+            experimentar con el Backend.
+          </p>
+          <div class="about__container-contact">
+            <a href="mailto:alfred3ks@protonmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/alfred3ks" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/alfredo-s%C3%A1nchez" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <h2 class="skills__title" id="skills__menu">Skills</h2>
+    <section class="skills__container">
+      <div class="skill">
+
+        <!-- Skill HTML -->
+        <div class="skill__progress">
+          <h6 class="skill__progress-title">HTML</h6>
+          <div class="skill__progress-container">
+            <div class="skill__progress-container--bar">
+              <div class="progressing__bar" id="progressing__html">
+                <span class="progressing__circle" id="circle__html"></span>
+              </div>
+            </div>
+            <p class="skill__progress-container--percent" id="percent__html">
+              0%
+            </p>
+          </div>
+        </div>
+
+        <!-- Skill CSS3 -->
+        <div class="skill__progress">
+          <h6 class="skill__progress-title">CSS3</h6>
+          <div class="skill__progress-container">
+            <div class="skill__progress-container--bar">
+              <div class="progressing__bar" id="progressing__css">
+                <span class="progressing__circle" id="circle__css"></span>
+              </div>
+            </div>
+            <p class="skill__progress-container--percent" id="percent__css">
+              0%
+            </p>
+          </div>
+        </div>
+
+        <!-- Skill JAVASCRIPT -->
+        <div class="skill__progress">
+          <h6 class="skill__progress-title">JAVASCRIPT</h6>
+          <div class="skill__progress-container">
+            <div class="skill__progress-container--bar">
+              <div class="progressing__bar" id="progressing__js">
+                <span class="progressing__circle" id="circle__js"></span>
+              </div>
+            </div>
+            <p class="skill__progress-container--percent" id="percent__js">
+              0%
+            </p>
+          </div>
+        </div>
+
+        <!-- Skill REACTJS -->
+        <div class="skill__progress">
+          <h6 class="skill__progress-title">REACTJS</h6>
+          <div class="skill__progress-container">
+            <div class="skill__progress-container--bar">
+              <div class="progressing__bar" id="progressing__rj">
+                <span class="progressing__circle" id="circle__rj"></span>
+              </div>
+            </div>
+            <p class="skill__progress-container--percent" id="percent__rj">
+              0%
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <!-- Project card -->
+    <h2 class="card__title" id="projects">Proyectos</h2>
+    <section class="projects" id="projects">
+      <!-- Batatabit -->
+      <div class="card">
+        <div class="card__container">
+          <h2 class="card__container-title">Batatabit</h2>
+          <div class="card__container-img">
+            <img src="./public/assets/img/batata-bit.png" alt="pantalla batatabit" />
+          </div>
+          <div class="card__container-description">
+            <p>#HTML</p>
+            <p>#CSS</p>
+            <p>#Responsive</p>
+          </div>
+          <p class="card__container-text">
+            Cryptocurrency landing page project.
+          </p>
+          <div class="card__container-button">
+            <a href="https://alfred3ks.github.io/batatabit/" target="_blank"><i
+                class="fa-solid fa-arrow-up-from-bracket"></i></a>
+            <a href="https://github.com/alfred3ks/batatabit" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- App tasks -->
+      <div class="card">
+        <div class="card__container">
+          <h2 class="card__container-title">Lista de tareas</h2>
+          <div class="card__container-img">
+            <img src="./public/assets/img/lista-de-tareas.png" alt="pantalla app de tareas" />
+          </div>
+          <div class="card__container-description">
+            <p>#React</p>
+            <p>#CSS</p>
+            <p>#Responsive</p>
+          </div>
+          <p class="card__container-text">
+            Aplicación para la creación de tareas.
+          </p>
+          <div class="card__container-button">
+            <a href="https://alfred3ks.github.io/lista_de_tareas/" target="_blank"><i
+                class="fa-solid fa-arrow-up-from-bracket"></i></a>
+            <a href="https://github.com/alfred3ks/lista_de_tareas" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- hola junior -->
+      <div class="card">
+        <div class="card__container">
+          <h2 class="card__container-title">Hola Junior</h2>
+          <div class="card__container-img">
+            <img src="./public/assets/img/holajunior.png" alt="plantilla de html y css hola junior" />
+          </div>
+          <div class="card__container-description">
+            <p>#HTML</p>
+            <p>#CSS</p>
+            <p>#Responsive</p>
+          </div>
+          <p class="card__container-text">Plantilla en HTML y CSS.</p>
+          <div class="card__container-button">
+            <a href="https://alfred3ks.github.io/junior/" target="_blank"><i
+                class="fa-solid fa-arrow-up-from-bracket"></i></a>
+            <a href="https://github.com/alfred3ks/junior" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artemis Camp -->
+      <div class="card">
+        <div class="card__container">
+          <h2 class="card__container-title">ArtemisCamp</h2>
+          <div class="card__container-img">
+            <img src="./public/assets/img/artemiscamp.png" alt="pantalla card de testimonios" />
+          </div>
+          <div class="card__container-description">
+            <p>#React</p>
+            <p>#CSS</p>
+            <p>#Responsive</p>
+          </div>
+          <p class="card__container-text">Card de testimonios.</p>
+          <div class="card__container-button">
+            <a href="https://alfred3ks.github.io/testimonios/" target="_blank"><i
+                class="fa-solid fa-arrow-up-from-bracket"></i></a>
+            <a href="https://github.com/alfred3ks/testimonios" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contador de clics-->
+      <div class="card">
+        <div class="card__container">
+          <h2 class="card__container-title">Contador</h2>
+          <div class="card__container-img">
+            <img src="./public/assets/img/contador.png" alt="contador de clic" />
+          </div>
+          <div class="card__container-description">
+            <p>#React</p>
+            <p>#CSS</p>
+            <p>#Responsive</p>
+          </div>
+          <p class="card__container-text">Contador de clics.</p>
+          <div class="card__container-button">
+            <a href="https://alfred3ks.github.io/contador/" target="_blank"><i
+                class="fa-solid fa-arrow-up-from-bracket"></i></a>
+            <a href="https://github.com/alfred3ks/contador/" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__container">
+          <h2 class="card__container-title">Blog</h2>
+          <div class="card__container-img">
+            <img src="./public/assets/img/blog.png" alt="blog" />
+          </div>
+          <div class="card__container-description">
+            <p>#React</p>
+            <p>#CSS</p>
+            <p>#Responsive</p>
+          </div>
+          <p class="card__container-text">Blog usando React Router.</p>
+          <div class="card__container-button">
+            <a href="https://alfred3ks.github.io/app_react_route_blog/" target="_blank"><i
+                class="fa-solid fa-arrow-up-from-bracket"></i></a>
+            <a href="https://github.com/alfred3ks/app_react_route_blog/" target="_blank"><i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__container-contact">
+        <a href="mailto:alfred3ks@protonmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/alfred3ks" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/alfredo-s%C3%A1nchez" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <h2 class="footer__container-title">
+        Copyright <span id="fecha">2019</span> - Alfredo Sánchez
+      </h2>
+    </div>
+  </footer>
+
+  <script src="./public/bundle.js" type="module"></script>
+</body>
+</html>

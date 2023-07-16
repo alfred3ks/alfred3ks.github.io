@@ -1,8 +1,10 @@
 /* Estilos comunes del proyecto */
 :root {
-  --color-primary: #0d264d;
-  --color-secondary: #0a192f;
-  --color-text: gold;
+  --primary-color: #0d264d;
+  --secondary-color: #0a192f;
+  --text-primary-color: gold;
+  --text-secondary-color: #ffffff;
+  --shadow-color: #000000;
 }
 
 html {
@@ -11,5 +13,5 @@ html {
 }
 
 body {
-  background-color: var(--color-secondary);
+  background-color: var(--secondary-color);
 }
