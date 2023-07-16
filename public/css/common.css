@@ -1,0 +1,15 @@
+/* Estilos comunes del proyecto */
+:root {
+  --color-primary: #0d264d;
+  --color-secondary: #0a192f;
+  --color-text: gold;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+}
+
+body {
+  background-color: var(--color-secondary);
+}
