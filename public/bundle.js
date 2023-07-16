@@ -1,47 +1,46 @@
-'use strict';
+"use strict";
 
 // Obtenemos boton y lista
-const button = document.querySelector('#button');
-const list= document.querySelector('#list');
-const ul = document.querySelector('#list__hide');
-
+const button = document.querySelector("#button");
+const list = document.querySelector("#list");
+const ul = document.querySelector("#list__hide");
 
 // Creamos la funcion para el menu hamburguesa
-const change = ()=>{
-    button.classList.toggle('change');
-    list.classList.toggle('change__menu');
+const change = () => {
+  button.classList.toggle("change");
+  list.classList.toggle("change__menu");
 };
 
 // button.addEventListener('click', change);
 // ul.addEventListener('click', change);
 
-let ejecutarCambio = ()=>{
-    button.addEventListener('click', change);
-    ul.addEventListener('click', change);
+let ejecutarCambio = () => {
+  button.addEventListener("click", change);
+  ul.addEventListener("click", change);
 };
 
-const dato = document.querySelector('#fecha');
+const dato = document.querySelector("#fecha");
 
 let fecha = new Date();
 let actual = fecha.getFullYear();
 
 let cambiarAnnio = () => {
-    dato.textContent = actual;
+  dato.textContent = actual;
 };
 
 // Funcion para mostrar barrar de skill:
 let barras = (percentage, number, progressing, circle) => {
-    let counter = 0;
-    setInterval(() => {
-        if (counter === percentage) {
-            clearInterval();
-        } else {
-            counter += 1;
-            number.innerHTML = counter + "%";
-            progressing.style.width = counter + '%';
-            circle.style.left = counter + '%';
-        }
-    }, 30);
+  let counter = 0;
+  setInterval(() => {
+    if (counter === percentage) {
+      clearInterval();
+    } else {
+      counter += 1;
+      number.innerHTML = counter + "%";
+      progressing.style.width = counter + "%";
+      circle.style.left = counter + "%";
+    }
+  }, 30);
 };
 
 // Traemos las variables del HTML:

@@ -9,13 +9,9 @@ const change = () => {
   list.classList.toggle("change__menu");
 };
 
-// button.addEventListener('click', change);
-// ul.addEventListener('click', change);
-
 let ejecutarCambio = () => {
   button.addEventListener("click", change);
   ul.addEventListener("click", change);
 };
 
-// ejecutarCambio();
 export default ejecutarCambio;

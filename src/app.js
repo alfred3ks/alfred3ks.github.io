@@ -1,5 +1,5 @@
 import ejecutarCambio from "./hamburger.js";
-import cambiarAnnio from "./fecha.js";
+// import cambiarAnnio from "./fecha.js";
 import barras from "./skills.js";
 
 // Traemos las variables del HTML:
