@@ -11,6 +11,24 @@
   padding: 15px 20px;
   border-radius: 5px;
   margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.about__image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(../assets/img/fondo-about.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
+  filter: brightness(45%);
 }
 
 .about__container-header {
