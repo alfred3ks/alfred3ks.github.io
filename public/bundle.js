@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Obtenemos boton y lista
 const button = document.querySelector("#button");
@@ -11,25 +11,23 @@ const change = () => {
   list.classList.toggle("change__menu");
 };
 
-// button.addEventListener('click', change);
-// ul.addEventListener('click', change);
-
-let ejecutarCambio = () => {
+let executeChange = () => {
   button.addEventListener("click", change);
   ul.addEventListener("click", change);
 };
 
-const dato = document.querySelector("#fecha");
+// Traemos desde el HTMl es selector
+const date = document.querySelector("#year");
 
-let fecha = new Date();
-let actual = fecha.getFullYear();
+let dateNow = new Date();
+let now = dateNow.getFullYear();
 
-let cambiarAnnio = () => {
-  dato.textContent = actual;
+let changeYear = () => {
+  date.textContent = now;
 };
 
 // Funcion para mostrar barrar de skill:
-let barras = (percentage, number, progressing, circle) => {
+const bars = (percentage, number, progressing, circle) => {
   let counter = 0;
   setInterval(() => {
     if (counter === percentage) {
@@ -61,9 +59,9 @@ let circleRj = document.querySelector("#circle__rj");
 let progressingRj = document.querySelector("#progressing__rj");
 
 // Ejecutamos las funciones:
-ejecutarCambio();
-cambiarAnnio();
-barras(90, numberHtml, progressingHtml, circleHtml);
-barras(85, numberCss, progressingCss, circleCss);
-barras(70, numberJs, progressingJs, circleJs);
-barras(65, numberRj, progressingRj, circleRj);
+executeChange();
+changeYear();
+bars(90, numberHtml, progressingHtml, circleHtml);
+bars(85, numberCss, progressingCss, circleCss);
+bars(70, numberJs, progressingJs, circleJs);
+bars(65, numberRj, progressingRj, circleRj);

@@ -1,16 +1,16 @@
 // Funcion para mostrar barrar de skill:
-let barras = (percentage, number, progressing, circle) => {
-    let counter = 0;
-    setInterval(() => {
-        if (counter === percentage) {
-            clearInterval();
-        } else {
-            counter += 1;
-            number.innerHTML = counter + "%";
-            progressing.style.width = counter + '%';
-            circle.style.left = counter + '%';
-        }
-    }, 30);
-}
+const bars = (percentage, number, progressing, circle) => {
+  let counter = 0;
+  setInterval(() => {
+    if (counter === percentage) {
+      clearInterval();
+    } else {
+      counter += 1;
+      number.innerHTML = counter + "%";
+      progressing.style.width = counter + "%";
+      circle.style.left = counter + "%";
+    }
+  }, 30);
+};
 
-export default barras;
+export default bars;
