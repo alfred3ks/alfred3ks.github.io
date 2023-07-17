@@ -1,13 +1,7 @@
-.skill {
-  background-color: var(--primary-color);
-  padding: 15px 20px;
-  border-radius: 5px;
-}
-
-.skill__title {
-  font-size: 2.2rem;
-  font-weight: 400;
-  color: var(--text-secondary-color);
+.skills {
+  width: 100%;
+  min-width: 300px;
+  padding: 10px;
 }
 
 .skills__title {
@@ -19,11 +13,9 @@
 }
 
 .skills__container {
-  width: 100%;
-  min-width: 300px;
-  background-color: var(--secondary-color);
-  padding: 10px;
-  padding-top: 13px;
+  background-color: var(--primary-color);
+  padding: 15px 20px;
+  border-radius: 5px;
 }
 
 .skill__progress {
@@ -38,7 +30,6 @@
   width: 40px;
   font-size: 1.6rem;
   letter-spacing: 1.2px;
-  color: var(--text-secondary-color);
   color: var(--text-secondary-color);
 }
 
@@ -87,18 +78,14 @@
 
 /* Media queries */
 /* Desktop */
-@media screen and (width >= 1024px) {
-  .skill {
-    padding: 35px 120px;
-  }
-
-  .skill__title {
-    margin-bottom: 30px;
-  }
-
-  .skills__container {
+@media screen and (width > 1024px) {
+  .skills {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
+  }
+
+  .skills__container {
+    padding: 35px 120px;
   }
 }

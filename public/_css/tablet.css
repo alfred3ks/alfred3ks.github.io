@@ -1,9 +1,0 @@
-/* Grid cards */
-.projects {
-  display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(430px, 1fr)); */
-  grid-template-columns: 1fr 1fr;
-  /* grid-auto-rows: minmax(250px, 1fr); */
-  gap: 5px;
-  padding: 20px;
-}
