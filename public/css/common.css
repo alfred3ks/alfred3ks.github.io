@@ -9,9 +9,14 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 95px;
+  scroll-padding-top: 80px;
 }
 
 body {
-  background-color: var(--secondary-color);
+  background: rgb(10, 25, 47);
+  background: linear-gradient(
+    145deg,
+    rgba(10, 25, 47, 1) 53%,
+    rgba(79, 70, 0, 1) 100%
+  );
 }
