@@ -1,18 +1,1 @@
 /* footer */
-.footer__container {
-  flex-direction: row;
-  padding: 15px 70px;
-}
-
-.footer__container-title {
-  margin-bottom: 20px;
-}
-
-.footer__container-contact {
-  width: 180px;
-}
-
-.footer__container-contact a {
-  font-size: 2.5rem;
-  color: #ffffff;
-}
