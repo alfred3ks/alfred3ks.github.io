@@ -163,9 +163,15 @@
 /* Desktop */
 @media screen and (width >= 1024px) {
   .header {
-    /* justify-content: space-around; */
-    /* justify-content: space-evenly; */
     padding: 0 55px;
+  }
+
+  .header__nav {
+    width: 600px;
+  }
+
+  .header__nav ul a {
+    font-size: 2rem;
   }
 
   .header__nav ul a:hover {
