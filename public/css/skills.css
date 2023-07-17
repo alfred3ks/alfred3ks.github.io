@@ -1,13 +1,14 @@
 .skills {
   width: 100%;
   min-width: 300px;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .skills__title {
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--text-secondary-color);
+  margin-top: 10px;
   margin-left: 15px;
   padding: 10px 0;
 }
@@ -77,6 +78,15 @@
 }
 
 /* Media queries */
+/* Desktop */
+@media screen and (width >= 768px) {
+  .skills__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+
 /* Desktop */
 @media screen and (width > 1024px) {
   .skills {
