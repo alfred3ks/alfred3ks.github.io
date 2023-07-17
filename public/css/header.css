@@ -76,7 +76,7 @@
   border-left: 1px solid var(--text-primary-color);
   position: fixed;
   z-index: 2;
-  top: 85px;
+  top: 75px;
   right: -77vw;
   background-color: var(--primary-color);
   transition: transform 0.7s ease;
@@ -98,6 +98,12 @@
   font-size: 1.6rem;
   text-decoration: none;
   color: var(--text-secondary-color);
+}
+
+.header__nav-latest {
+  border: var(--text-primary-color) solid 1px;
+  border-radius: 4px;
+  padding: 10px;
 }
 
 /* Estilo que hace aparecer el listado  menu */

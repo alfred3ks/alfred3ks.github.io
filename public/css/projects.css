@@ -2,13 +2,14 @@
 .projects {
   width: 100%;
   min-width: 300px;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .card__title {
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--text-secondary-color);
+  margin-top: 10px;
   margin-left: 15px;
   padding: 10px 0;
 }
@@ -17,7 +18,7 @@
   background-color: var(--primary-color);
   padding: 15px 20px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .card__container-img {
