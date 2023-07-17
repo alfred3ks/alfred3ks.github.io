@@ -162,10 +162,6 @@
 
 /* Desktop */
 @media screen and (width >= 1024px) {
-  .header {
-    padding: 0 55px;
-  }
-
   .header__nav {
     width: 600px;
   }
