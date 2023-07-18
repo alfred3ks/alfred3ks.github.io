@@ -11,7 +11,7 @@ const change = () => {
   list.classList.toggle("change__menu");
 };
 
-let executeChange = () => {
+const executeChange = () => {
   button.addEventListener("click", change);
   ul.addEventListener("click", change);
 };
@@ -19,10 +19,10 @@ let executeChange = () => {
 // Traemos desde el HTMl es selector
 const date = document.querySelector("#year");
 
-let dateNow = new Date();
-let now = dateNow.getFullYear();
+const dateNow = new Date();
+const now = dateNow.getFullYear();
 
-let changeYear = () => {
+const changeYear = () => {
   date.textContent = now;
 };
 
@@ -42,21 +42,21 @@ const bars = (percentage, number, progressing, circle) => {
 };
 
 // Traemos las variables del HTML:
-let numberHtml = document.querySelector("#percent__html");
-let circleHtml = document.querySelector("#circle__html");
-let progressingHtml = document.querySelector("#progressing__html");
+const numberHtml = document.querySelector("#percent__html");
+const circleHtml = document.querySelector("#circle__html");
+const progressingHtml = document.querySelector("#progressing__html");
 
-let numberCss = document.querySelector("#percent__css");
-let circleCss = document.querySelector("#circle__css");
-let progressingCss = document.querySelector("#progressing__css");
+const numberCss = document.querySelector("#percent__css");
+const circleCss = document.querySelector("#circle__css");
+const progressingCss = document.querySelector("#progressing__css");
 
-let numberJs = document.querySelector("#percent__js");
-let circleJs = document.querySelector("#circle__js");
-let progressingJs = document.querySelector("#progressing__js");
+const numberJs = document.querySelector("#percent__js");
+const circleJs = document.querySelector("#circle__js");
+const progressingJs = document.querySelector("#progressing__js");
 
-let numberRj = document.querySelector("#percent__rj");
-let circleRj = document.querySelector("#circle__rj");
-let progressingRj = document.querySelector("#progressing__rj");
+const numberRj = document.querySelector("#percent__rj");
+const circleRj = document.querySelector("#circle__rj");
+const progressingRj = document.querySelector("#progressing__rj");
 
 // Ejecutamos las funciones:
 executeChange();
