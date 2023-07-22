@@ -9,7 +9,7 @@ const change = () => {
   list.classList.toggle("change__menu");
 };
 
-let executeChange = () => {
+const executeChange = () => {
   button.addEventListener("click", change);
   ul.addEventListener("click", change);
 };

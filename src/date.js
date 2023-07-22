@@ -1,10 +1,10 @@
 // Traemos desde el HTMl es selector
 const date = document.querySelector("#year");
 
-let dateNow = new Date();
-let now = dateNow.getFullYear();
+const dateNow = new Date();
+const now = dateNow.getFullYear();
 
-let changeYear = () => {
+const changeYear = () => {
   date.textContent = now;
 };
 
