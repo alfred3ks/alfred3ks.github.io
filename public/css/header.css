@@ -2,7 +2,7 @@
 .header {
   width: 100%;
   min-width: 300px;
-  height: 75px;
+  height: 85px;
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
@@ -73,10 +73,10 @@
 .header__nav {
   width: 75vw;
   height: 100vh;
-  border-left: 1px solid var(--text-primary-color);
+  /* border-left: 1px solid var(--text-primary-color); */
   position: fixed;
   z-index: 2;
-  top: 75px;
+  top: 85px;
   right: -77vw;
   background-color: var(--primary-color);
   transition: transform 0.7s ease;
