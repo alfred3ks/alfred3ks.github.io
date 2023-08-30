@@ -6,9 +6,9 @@ const bars = (percentage, number, progressing, circle) => {
       clearInterval();
     } else {
       counter += 1;
-      number.innerHTML = counter + "%";
-      progressing.style.width = counter + "%";
-      circle.style.left = counter + "%";
+      number.innerText = counter + '%';
+      progressing.style.width = counter + '%';
+      circle.style.left = counter + '%';
     }
   }, 30);
 };
