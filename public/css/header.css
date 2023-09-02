@@ -111,6 +111,10 @@
   transform: translateX(-77vw);
 }
 
+.remove__scroll {
+  overflow-y: hidden;
+}
+
 /* Media queries */
 /* Tablet */
 @media screen and (width >= 768px) {

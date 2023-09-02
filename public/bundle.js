@@ -1,19 +1,20 @@
 'use strict';
 
 // Obtenemos boton y lista
-const button = document.querySelector("#button");
-const list = document.querySelector("#list");
-const ul = document.querySelector("#list__hide");
+const button = document.querySelector('#button');
+const list = document.querySelector('#list');
+const ul = document.querySelector('#list__hide');
 
 // Creamos la funcion para el menu hamburguesa
 const change = () => {
-  button.classList.toggle("change");
-  list.classList.toggle("change__menu");
+  button.classList.toggle('change');
+  list.classList.toggle('change__menu');
+  document.body.classList.toggle('remove__scroll');
 };
 
 const executeChange = () => {
-  button.addEventListener("click", change);
-  ul.addEventListener("click", change);
+  button.addEventListener('click', change);
+  ul.addEventListener('click', change);
 };
 
 // Traemos desde el HTMl es selector
@@ -95,7 +96,6 @@ const changeDeveloper = () => {
     aboutContainer.innerHTML = plantilla;
     aboutContainer.classList.add('about__container');
 
-    // Agregamos al contenedor todas las categorias:
     aboutMe.append(aboutContainer);
   });
 };
