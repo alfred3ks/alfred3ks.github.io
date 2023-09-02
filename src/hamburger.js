@@ -7,7 +7,6 @@ const ul = document.querySelector('#list__hide');
 const change = () => {
   button.classList.toggle('change');
   list.classList.toggle('change__menu');
-  document.body.classList.toggle('remove__scroll');
 };
 
 const executeChange = () => {

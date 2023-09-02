@@ -72,12 +72,14 @@
 /* Header Nav */
 .header__nav {
   width: 75vw;
+  width: 100vw;
   height: 100vh;
   /* border-left: 1px solid var(--text-primary-color); */
   position: fixed;
   z-index: 2;
   top: 85px;
   right: -77vw;
+  right: -100vw;
   background-color: var(--primary-color);
   transition: transform 0.7s ease;
 }
@@ -109,10 +111,7 @@
 /* Estilo que hace aparecer el listado  menu */
 .change__menu {
   transform: translateX(-77vw);
-}
-
-.remove__scroll {
-  overflow-y: hidden;
+  transform: translateX(-100vw);
 }
 
 /* Media queries */
