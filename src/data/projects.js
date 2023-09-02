@@ -1,4 +1,4 @@
-export default project = [
+const projects = [
   {
     id: 1,
     title: 'Batatabit',
@@ -49,8 +49,10 @@ export default project = [
     title: 'Blog',
     subTitle: 'Blog usando React Router.',
     tag: ['#React', '#CCS3', '#Responsive'],
-    urlImage: '../../public/assets/img/contador.png',
+    urlImage: '../../public/assets/img/blog.png',
     urlWeb: 'https://alfred3ks.github.io/app_react_route_blog/',
     urlGitHub: 'https://github.com/alfred3ks/app_react_route_blog/',
   },
 ];
+
+export default projects;
