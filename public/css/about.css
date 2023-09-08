@@ -101,7 +101,7 @@
 /* Desktop */
 @media screen and (width > 1024px) {
   .about {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
   }
 

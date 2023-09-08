@@ -165,6 +165,13 @@
 
 /* Desktop */
 @media screen and (width >= 1024px) {
+  .header {
+    max-width: 1440px;
+    margin: 0 auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
   .header__nav {
     width: 600px;
   }
