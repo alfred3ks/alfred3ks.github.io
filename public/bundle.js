@@ -9,7 +9,6 @@ const ul = document.querySelector('#list__hide');
 const change = () => {
   button.classList.toggle('change');
   list.classList.toggle('change__menu');
-  document.body.classList.toggle('remove__scroll');
 };
 
 const executeChange = () => {
@@ -46,12 +45,20 @@ const developer = [
   {
     userName: 'Alfredo Sánchez',
     profession: 'Desarrollador Web',
-    skill: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Node.js', 'Express.js'],
+    skill: [
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'React.js',
+      'NextJS',
+      'Node.js',
+      'Express.js',
+    ],
     email: 'alfred3ks@proton.me',
     gitHub: 'https://github.com/alfred3ks',
     linkedin: 'https://www.linkedin.com/in/alfredo-sanchez75/',
     description:
-      'Actualmente estoy enfocado y disfrutando construyendo proyectos para la web usando tecnologías como HTML5, CSS3, JavaScript, Frameworks y Librerias como React.<br />Mi interés para este mundo nació por la curiosidad de saber como funcionan los proyectos que viven en internet, su funcionamiento interno y como fueron creados.<br />Mi enfoque es crear interfaces de usuario atractivas e intuitivas.<br />Me apasiona mantenerme al día con las últimas tendencias en el campo del desarrollo web, y siempre estoy buscando oportunidades para aprender y mejorar mis habilidades.',
+      'Actualmente, me encuentro enfocado y disfrutando la construcción de proyectos web utilizando tecnologías como HTML5, CSS3 y JavaScript, así como la biblioteca de React y frameworks como NextJS.<br /> Mi interés por el desarrollo web nació de la curiosidad por entender cómo funcionan los proyectos en internet, su estructura interna y el proceso detrás de su creación.<br /> Mi enfoque principal es diseñar interfaces de usuario atractivas e intuitivas. Además, me apasiona estar al día con las últimas tendencias en desarrollo web y siempre busco oportunidades para aprender y mejorar mis habilidades.',
     urlImage: '../../public/assets/img/logo-alfredo-sanchez.svg',
   },
 ];
@@ -104,7 +111,7 @@ const projects = [
   {
     id: 1,
     title: 'Batatabit',
-    subTitle: 'Cryptocurrency landing page project.',
+    subTitle: 'Landing page.',
     tag: ['#HTML', '#CCS3', '#Responsive'],
     urlImage: '../../public/assets/img/batata-bit.jpg',
     urlWeb: 'https://alfred3ks.github.io/batatabit/',
@@ -113,7 +120,7 @@ const projects = [
   {
     id: 2,
     title: 'Lista de tareas',
-    subTitle: 'Aplicación para la creación de tareas.',
+    subTitle: 'App lista de tareas.',
     tag: ['#HTML', '#CCS3', '#Responsive'],
     urlImage: '../../public/assets/img/lista-de-tareas.png',
     urlWeb: 'https://alfred3ks.github.io/lista_de_tareas/',
@@ -122,7 +129,7 @@ const projects = [
   {
     id: 3,
     title: 'Hola Junior',
-    subTitle: 'Plantilla de HTML y CSS.',
+    subTitle: 'Plantilla portfolio.',
     tag: ['#HTML', '#CCS3', '#Responsive'],
     urlImage: '../../public/assets/img/holajunior.jpg',
     urlWeb: 'https://alfred3ks.github.io/junior/',
@@ -131,7 +138,7 @@ const projects = [
   {
     id: 4,
     title: 'Jhon Doe',
-    subTitle: 'Portfolio web de Jhon Doe.',
+    subTitle: 'Portfolio Jhon Doe.',
     tag: ['#HTML', '#CCS3', '#Responsive'],
     urlImage: '../../public/assets/img/jonh-doe-screenshot.jpg',
     urlWeb: 'https://alfred3ks.github.io/ejer-html-css-kc/',
@@ -140,7 +147,7 @@ const projects = [
   {
     id: 5,
     title: 'Contador',
-    subTitle: 'Contador de clics.',
+    subTitle: 'Contador.',
     tag: ['#React', '#CCS3', '#Responsive'],
     urlImage: '../../public/assets/img/contador.png',
     urlWeb: 'https://alfred3ks.github.io/contador/',
@@ -149,7 +156,7 @@ const projects = [
   {
     id: 6,
     title: 'Blog',
-    subTitle: 'Blog usando React Router.',
+    subTitle: 'Blog React Router.',
     tag: ['#React', '#CCS3', '#Responsive'],
     urlImage: '../../public/assets/img/blog.png',
     urlWeb: 'https://alfred3ks.github.io/app_react_route_blog/',
