@@ -15,10 +15,12 @@ const changeDeveloper = () => {
               alt="logo ${dev.userName}"
             />
           </div>
-          <h2 class="about__container-header--title">
-            Hola, soy <span>${dev.userName}</span>
-          </h2>
-          <p class="about__container-header--desc">${dev.profession}.</p>
+          <div>
+            <h2 class="about__container-header--title">
+              Hola, soy <span>${dev.userName}</span>
+            </h2>
+            <p class="about__container-header--desc">${dev.profession}.</p>
+          </div>
         </div>
         <div class="about__container-text">
           <p>${dev.description}</p>
