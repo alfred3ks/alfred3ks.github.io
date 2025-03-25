@@ -37,12 +37,12 @@ const projects = [
   },
   {
     id: 5,
-    title: 'Contador',
-    subTitle: 'Contador.',
-    tag: ['#React', '#CCS3', '#Responsive'],
-    urlImage: '../../public/assets/img/contador.png',
-    urlWeb: 'https://alfred3ks.github.io/contador/',
-    urlGitHub: 'https://github.com/alfred3ks/contador/',
+    title: 'Rick and Morty',
+    subTitle: 'Rick and Morty App.',
+    tag: ['#React', '#CCS3', '#TailwindCSS'],
+    urlImage: '../../public/assets/img/rick-and-morty.png',
+    urlWeb: 'https://alfred3ks.github.io/rick-and-morty/',
+    urlGitHub: 'https://github.com/alfred3ks/rick-and-morty/',
   },
   {
     id: 6,
