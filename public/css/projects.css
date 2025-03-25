@@ -19,6 +19,7 @@
   padding: 15px 20px;
   border-radius: 5px;
   margin-top: 10px;
+  outline: 2.5px solid gold;
 }
 
 .card__container-img {
@@ -63,6 +64,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .card__container-button a {
   font-size: 2.5rem;
   color: var(--text-secondary-color);
@@ -70,12 +72,13 @@
 
 /* Media queries */
 /* Tablet */
-@media screen and (width >= 768px) {
+@media screen and (width >=768px) {
   .projects__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
   }
+
   .card__container {
     margin: 0;
   }
