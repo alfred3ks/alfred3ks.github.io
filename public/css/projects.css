@@ -19,7 +19,7 @@
   padding: 15px 20px;
   border-radius: 5px;
   margin-top: 10px;
-  outline: 2.5px solid gold;
+  outline: var(--text-primary-color) solid 2.5px;
 }
 
 .card__container-img {
