@@ -56,16 +56,57 @@
 
 .progressing__bar {
   height: 100%;
-  background-color: var(--text-primary-color);
+  /* background-color: var(--text-primary-color);
+  background-color: red; */
   border-radius: 30px;
 }
+
+/* Barra de progreso HTML */
+.progressing__bar--html {
+  background-color: var(--primary-color-html);
+}
+
+.progressing__circle--html {
+  background: var(--primary-color-html);
+}
+
+/* Barra de progreso CSS */
+.progressing__bar--css {
+  background-color: var(--primary-color-css);
+}
+
+.progressing__circle--css {
+  background: var(--primary-color-css);
+}
+
+/* Barra de progreso React */
+.progressing__bar--react {
+  background-color: var(--primary-color-react);
+}
+
+.progressing__circle--react {
+  background: var(--primary-color-react);
+}
+
+/* Barra de progreso JS */
+.progressing__bar--js {
+  background-color: var(--primary-color-js);
+}
+
+.progressing__circle--js {
+  background: var(--primary-color-js);
+}
+
+
 
 .progressing__circle {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: var(--text-secondary-color);
+  /* background: var(--text-secondary-color); */
+  /* background: red; */
   border: 3px solid var(--text-primary-color);
+  border: 3px solid rgb(234, 234, 241);
   border-radius: 50%;
   transform: translateY(-5px) translateX(-5px);
 }
@@ -79,7 +120,7 @@
 
 /* Media queries */
 /* Desktop */
-@media screen and (width >= 768px) {
+@media screen and (width >=768px) {
   .skills__container {
     display: grid;
     grid-template-columns: 1fr 1fr;

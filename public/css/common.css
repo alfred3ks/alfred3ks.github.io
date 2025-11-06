@@ -5,6 +5,11 @@
   --text-primary-color: gold;
   --text-secondary-color: #ffffff;
   --shadow-color: #000000;
+
+  --primary-color-js: #f7df1e;
+  --primary-color-html: #e34f26;
+  --primary-color-react: #61dafb;
+  --primary-color-css: #1572b6;
 }
 
 html {
@@ -14,9 +19,7 @@ html {
 
 body {
   background: rgb(10, 25, 47);
-  background: linear-gradient(
-    145deg,
-    rgba(10, 25, 47, 1) 53%,
-    rgba(79, 70, 0, 1) 100%
-  );
+  background: linear-gradient(145deg,
+      rgba(10, 25, 47, 1) 53%,
+      rgba(79, 70, 0, 1) 100%);
 }
