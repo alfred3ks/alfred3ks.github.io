@@ -1,4 +1,4 @@
-import developer from './data/developer.js';
+import developer from './data/developer.json';
 
 const aboutMe = document.getElementById('about__me');
 
@@ -11,13 +11,13 @@ const changeDeveloper = () => {
         <div class="about__container-header">
           <div class="about__container-header--img">
             <img
-              src="${dev.urlImage}"
-              alt="logo ${dev.userName}"
+              src="${dev.url_image}"
+              alt="logo ${dev.user_name}"
             />
           </div>
           <div>
             <h2 class="about__container-header--title">
-              Hola, soy <span>${dev.userName}</span>
+              Hola, soy <span>${dev.user_name}</span>
             </h2>
             <p class="about__container-header--desc">${dev.profession}.</p>
           </div>
@@ -28,7 +28,7 @@ const changeDeveloper = () => {
             <a href="mailto:${dev.email}"
               ><i class="fa-solid fa-envelope"></i
             ></a>
-            <a href="${dev.gitHub}" target="_blank"
+            <a href="${dev.git_hub}" target="_blank"
               ><i class="fab fa-github"></i
             ></a>
             <a

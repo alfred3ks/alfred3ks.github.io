@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "rollup": "^3.23.1"
+  },
+  "dependencies": {
+    "@rollup/plugin-json": "^6.1.0"
   }
 }

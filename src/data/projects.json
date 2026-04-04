@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": "Jon Snow",
+    "sub_title": "Curriculum de Jon Snow.",
+    "tag": [
+      "React",
+      "CSS",
+      "Mobile First"
+    ],
+    "url_image": "../../public/assets/img/jon-snow.jpg",
+    "url_web": "https://alfred3ks.github.io/jon-snow/",
+    "url_git_hub": "https://github.com/alfred3ks/jon-snow/"
+  },
+  {
+    "id": 2,
+    "title": "Rick and Morty",
+    "sub_title": "Rick and Morty app.",
+    "tag": [
+      "React",
+      "CCS",
+      "TailwindCSS"
+    ],
+    "url_image": "../../public/assets/img/rick-and-morty.png",
+    "url_web": "https://alfred3ks.github.io/rick-and-morty/",
+    "url_git_hub": "https://github.com/alfred3ks/rick-and-morty/"
+  },
+  {
+    "id": 3,
+    "title": "Jhon Doe",
+    "sub_title": "Portfolio Jhon Doe.",
+    "tag": [
+      "HTML",
+      "CCS",
+      "Mobile First"
+    ],
+    "url_image": "../../public/assets/img/jonh-doe-screenshot.jpg",
+    "url_web": "https://alfred3ks.github.io/ejer-html-css-kc/",
+    "url_git_hub": "https://github.com/alfred3ks/ejer-html-css-kc"
+  }
+]

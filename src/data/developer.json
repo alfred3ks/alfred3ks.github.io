@@ -1,0 +1,20 @@
+[
+  {
+    "user_name": "Alfredo Sánchez",
+    "profession": "Desarrollador Web",
+    "skill": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React.js",
+      "NextJS",
+      "Node.js",
+      "Express.js"
+    ],
+    "email": "alfred3ks@proton.me",
+    "git_hub": "https://github.com/alfred3ks",
+    "linkedin": "https://www.linkedin.com/in/alfredo-sanchez75/",
+    "description": "React Developer enfocado en construir aplicaciones web modernas y escalables. Experiencia trabajando con React, JavaScript (ES6+), Vite y consumo de APIs. Me centro en escribir código limpio, reutilizable y en ofrecer una excelente experiencia de usuario.",
+    "url_image": "../../public/assets/img/logo-alfredo-sanchez.svg"
+  }
+]

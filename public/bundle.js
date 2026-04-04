@@ -41,26 +41,25 @@ const bars = (percentage, number, progressing, circle) => {
   }, 30);
 };
 
-const developer = [
-  {
-    userName: 'Alfredo Sánchez',
-    profession: 'Desarrollador Web',
-    skill: [
-      'HTML5',
-      'CSS3',
-      'JavaScript',
-      'React.js',
-      'NextJS',
-      'Node.js',
-      'Express.js',
-    ],
-    email: 'alfred3ks@proton.me',
-    gitHub: 'https://github.com/alfred3ks',
-    linkedin: 'https://www.linkedin.com/in/alfredo-sanchez75/',
-    description:
-      'Actualmente, me encuentro enfocado y disfrutando la construcción de proyectos web utilizando tecnologías como HTML5, CSS3 y JavaScript, así como la biblioteca de React y frameworks como NextJS y Astro.<br /> Mi interés por el desarrollo web nació de la curiosidad por entender cómo funcionan los proyectos en internet, su estructura interna y el proceso detrás de su creación.<br /> Mi enfoque principal es diseñar interfaces de usuario atractivas e intuitivas. Además, me apasiona estar al día con las últimas tendencias en desarrollo web y siempre busco oportunidades para aprender y mejorar mis habilidades.',
-    urlImage: '../../public/assets/img/logo-alfredo-sanchez.svg',
-  },
+var developer = [
+	{
+		user_name: "Alfredo Sánchez",
+		profession: "Desarrollador Web",
+		skill: [
+			"HTML5",
+			"CSS3",
+			"JavaScript",
+			"React.js",
+			"NextJS",
+			"Node.js",
+			"Express.js"
+		],
+		email: "alfred3ks@proton.me",
+		git_hub: "https://github.com/alfred3ks",
+		linkedin: "https://www.linkedin.com/in/alfredo-sanchez75/",
+		description: "React Developer enfocado en construir aplicaciones web modernas y escalables. Experiencia trabajando con React, JavaScript (ES6+), Vite y consumo de APIs. Me centro en escribir código limpio, reutilizable y en ofrecer una excelente experiencia de usuario.",
+		url_image: "../../public/assets/img/logo-alfredo-sanchez.svg"
+	}
 ];
 
 const aboutMe = document.getElementById('about__me');
@@ -74,13 +73,13 @@ const changeDeveloper = () => {
         <div class="about__container-header">
           <div class="about__container-header--img">
             <img
-              src="${dev.urlImage}"
-              alt="logo ${dev.userName}"
+              src="${dev.url_image}"
+              alt="logo ${dev.user_name}"
             />
           </div>
           <div>
             <h2 class="about__container-header--title">
-              Hola, soy <span>${dev.userName}</span>
+              Hola, soy <span>${dev.user_name}</span>
             </h2>
             <p class="about__container-header--desc">${dev.profession}.</p>
           </div>
@@ -91,7 +90,7 @@ const changeDeveloper = () => {
             <a href="mailto:${dev.email}"
               ><i class="fa-solid fa-envelope"></i
             ></a>
-            <a href="${dev.gitHub}" target="_blank"
+            <a href="${dev.git_hub}" target="_blank"
               ><i class="fab fa-github"></i
             ></a>
             <a
@@ -109,91 +108,74 @@ const changeDeveloper = () => {
   });
 };
 
-const projects = [
-  {
-    id: 1,
-    title: 'Batatabit',
-    subTitle: 'Landing Page.',
-    tag: ['HTML', 'CCS3', 'Mobile First'],
-    urlImage: '../../public/assets/img/batata-bit.jpg',
-    urlWeb: 'https://alfred3ks.github.io/batatabit/',
-    urlGitHub: 'https://github.com/alfred3ks/batatabit',
-  },
-  {
-    id: 2,
-    title: 'Lista de tareas',
-    subTitle: 'App lista de tareas.',
-    tag: ['React', 'CCS', 'Mobile First'],
-    urlImage: '../../public/assets/img/lista-de-tareas.png',
-    urlWeb: 'https://alfred3ks.github.io/lista_de_tareas/',
-    urlGitHub: 'https://github.com/alfred3ks/lista_de_tareas',
-  },
-  {
-    id: 3,
-    title: 'Hola Junior',
-    subTitle: 'Plantilla portfolio.',
-    tag: ['HTML', 'CCS', 'Mobile First'],
-    urlImage: '../../public/assets/img/holajunior.jpg',
-    urlWeb: 'https://alfred3ks.github.io/junior/',
-    urlGitHub: 'https://github.com/alfred3ks/junior',
-  },
-  {
-    id: 4,
-    title: 'Jhon Doe',
-    subTitle: 'Portfolio Jhon Doe.',
-    tag: ['HTML', 'CCS', 'Mobile First'],
-    urlImage: '../../public/assets/img/jonh-doe-screenshot.jpg',
-    urlWeb: 'https://alfred3ks.github.io/ejer-html-css-kc/',
-    urlGitHub: 'https://github.com/alfred3ks/ejer-html-css-kc',
-  },
-  {
-    id: 5,
-    title: 'Rick and Morty',
-    subTitle: 'Rick and Morty App.',
-    tag: ['React', 'CCS', 'TailwindCSS'],
-    urlImage: '../../public/assets/img/rick-and-morty.png',
-    urlWeb: 'https://alfred3ks.github.io/rick-and-morty/',
-    urlGitHub: 'https://github.com/alfred3ks/rick-and-morty/',
-  },
-  {
-    id: 6,
-    title: 'Jon Snow',
-    subTitle: 'Curriculum de Jon Snow.',
-    tag: ['React', 'CSS', 'Mobile First'],
-    urlImage: '../../public/assets/img/jon-snow.jpg',
-    urlWeb: 'https://alfred3ks.github.io/jon-snow/',
-    urlGitHub: 'https://github.com/alfred3ks/jon-snow/',
-  },
+var proj = [
+	{
+		id: 1,
+		title: "Jon Snow",
+		sub_title: "Curriculum de Jon Snow.",
+		tag: [
+			"React",
+			"CSS",
+			"Mobile First"
+		],
+		url_image: "../../public/assets/img/jon-snow.jpg",
+		url_web: "https://alfred3ks.github.io/jon-snow/",
+		url_git_hub: "https://github.com/alfred3ks/jon-snow/"
+	},
+	{
+		id: 2,
+		title: "Rick and Morty",
+		sub_title: "Rick and Morty app.",
+		tag: [
+			"React",
+			"CCS",
+			"TailwindCSS"
+		],
+		url_image: "../../public/assets/img/rick-and-morty.png",
+		url_web: "https://alfred3ks.github.io/rick-and-morty/",
+		url_git_hub: "https://github.com/alfred3ks/rick-and-morty/"
+	},
+	{
+		id: 3,
+		title: "Jhon Doe",
+		sub_title: "Portfolio Jhon Doe.",
+		tag: [
+			"HTML",
+			"CCS",
+			"Mobile First"
+		],
+		url_image: "../../public/assets/img/jonh-doe-screenshot.jpg",
+		url_web: "https://alfred3ks.github.io/ejer-html-css-kc/",
+		url_git_hub: "https://github.com/alfred3ks/ejer-html-css-kc"
+	}
 ];
 
 const projectsContainer = document.getElementById('projects__container');
 
 const changeProjects = () => {
-  projects.forEach((project) => {
+  proj.forEach((project) => {
     const cardContainer = document.createElement('div');
     const plantilla = `
             <h2 class="card__container-title">${project.title}</h2>
             <div class="card__container-img">
-              <a href="${project.urlWeb}" target="_blank"
+              <a href="${project.url_web}" target="_blank"
                 ><img
-                  src="${project.urlImage}"
+                  src="${project.url_image}"
                   alt="${project.title}"
               />
               </a>
             </div>
             <div class="card__container-description">
-              <p>${project.tag[0]}</p>
-              <p>${project.tag[1]}</p>
-              <p>${project.tag[2]}</p>
+              ${project.tag.map((tech) => `<p>${tech}</p>`).join('')}
             </div>
             <p class="card__container-text">
-              ${project.subTitle}
+              ${project.sub_title}
             </p>
             <div class="card__container-button">
-              <a href="${project.urlWeb}" target="_blank"
+              <a href="${project.url_web}" target="_blank"
                 ><i class="fa-solid fa-arrow-up-from-bracket"></i>
               </a>
-              <a href="${project.urlGitHub}" target="_blank"
+              <a href="${project.url_git_hub}" target="_blank"
                 ><i class="fab fa-github"></i>
               </a>
             </div>
