@@ -1,8 +1,8 @@
-import developer from './data/developer.json';
+import developer from '../data/developer.json';
 
 const aboutMe = document.getElementById('about__me');
 
-const changeDeveloper = () => {
+const renderDeveloper = () => {
   developer.forEach((dev) => {
     const aboutContainer = document.createElement('div');
 
@@ -46,4 +46,4 @@ const changeDeveloper = () => {
   });
 };
 
-export default changeDeveloper;
+export default renderDeveloper;

@@ -1,11 +1,11 @@
-import executeChange from './hamburger.js';
-import changeYear from './date.js';
-import bars from './skills.js';
+import initMenu from './modules/menu.js';
+import changeYear from './modules/changeYear.js';
+import barSkill from './modules/barSkill.js';
 
-import changeDeveloper from './changeDeveloper.js';
-import changeProjects from './changeProject.js';
+import renderDeveloper from './modules/renderDeveloper.js';
+import renderProjects from './modules/renderProjects.js';
 
-// Traemos las variables del HTML:
+// Traemos las variables del HTML para las skills:
 const numberHtml = document.querySelector('#percent__html');
 const circleHtml = document.querySelector('#circle__html');
 const progressingHtml = document.querySelector('#progressing__html');
@@ -18,17 +18,17 @@ const numberJs = document.querySelector('#percent__js');
 const circleJs = document.querySelector('#circle__js');
 const progressingJs = document.querySelector('#progressing__js');
 
-const numberRj = document.querySelector('#percent__rj');
-const circleRj = document.querySelector('#circle__rj');
-const progressingRj = document.querySelector('#progressing__rj');
+const numberReact = document.querySelector('#percent__rj');
+const circleReact = document.querySelector('#circle__rj');
+const progressingReact = document.querySelector('#progressing__rj');
 
 // Ejecutamos las funciones:
-executeChange();
+initMenu();
 changeYear();
-bars(90, numberHtml, progressingHtml, circleHtml);
-bars(85, numberCss, progressingCss, circleCss);
-bars(70, numberJs, progressingJs, circleJs);
-bars(65, numberRj, progressingRj, circleRj);
+barSkill(90, numberHtml, progressingHtml, circleHtml);
+barSkill(85, numberCss, progressingCss, circleCss);
+barSkill(80, numberJs, progressingJs, circleJs);
+barSkill(75, numberReact, progressingReact, circleReact);
 
-changeDeveloper();
-changeProjects();
+renderDeveloper();
+renderProjects();

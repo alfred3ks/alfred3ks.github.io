@@ -1,19 +1,19 @@
 'use strict';
 
 // Obtenemos boton y lista
-const button = document.querySelector('#button');
-const list = document.querySelector('#list');
-const ul = document.querySelector('#list__hide');
+const menuButton = document.querySelector('#button');
+const menuList = document.querySelector('#list');
+const navLinks = document.querySelector('#list__hide');
 
 // Creamos la funcion para el menu hamburguesa
-const change = () => {
-  button.classList.toggle('change');
-  list.classList.toggle('change__menu');
+const toggleMenu = () => {
+  menuButton.classList.toggle('change');
+  menuList.classList.toggle('change__menu');
 };
 
-const executeChange = () => {
-  button.addEventListener('click', change);
-  ul.addEventListener('click', change);
+const initMenu = () => {
+  menuButton.addEventListener('click', toggleMenu);
+  navLinks.addEventListener('click', toggleMenu);
 };
 
 // Traemos desde el HTMl es selector
@@ -27,7 +27,7 @@ const changeYear = () => {
 };
 
 // Funcion para mostrar barrar de skill:
-const bars = (percentage, number, progressing, circle) => {
+const barSkill = (percentage, number, progressing, circle) => {
   let counter = 0;
   setInterval(() => {
     if (counter === percentage) {
@@ -64,7 +64,7 @@ var developer = [
 
 const aboutMe = document.getElementById('about__me');
 
-const changeDeveloper = () => {
+const renderDeveloper = () => {
   developer.forEach((dev) => {
     const aboutContainer = document.createElement('div');
 
@@ -108,7 +108,7 @@ const changeDeveloper = () => {
   });
 };
 
-var proj = [
+var projects = [
 	{
 		id: 1,
 		title: "Jon Snow",
@@ -152,8 +152,8 @@ var proj = [
 
 const projectsContainer = document.getElementById('projects__container');
 
-const changeProjects = () => {
-  proj.forEach((project) => {
+const renderProjects = () => {
+  projects.forEach((project) => {
     const cardContainer = document.createElement('div');
     const plantilla = `
             <h2 class="card__container-title">${project.title}</h2>
@@ -188,7 +188,7 @@ const changeProjects = () => {
   });
 };
 
-// Traemos las variables del HTML:
+// Traemos las variables del HTML para las skills:
 const numberHtml = document.querySelector('#percent__html');
 const circleHtml = document.querySelector('#circle__html');
 const progressingHtml = document.querySelector('#progressing__html');
@@ -201,17 +201,17 @@ const numberJs = document.querySelector('#percent__js');
 const circleJs = document.querySelector('#circle__js');
 const progressingJs = document.querySelector('#progressing__js');
 
-const numberRj = document.querySelector('#percent__rj');
-const circleRj = document.querySelector('#circle__rj');
-const progressingRj = document.querySelector('#progressing__rj');
+const numberReact = document.querySelector('#percent__rj');
+const circleReact = document.querySelector('#circle__rj');
+const progressingReact = document.querySelector('#progressing__rj');
 
 // Ejecutamos las funciones:
-executeChange();
+initMenu();
 changeYear();
-bars(90, numberHtml, progressingHtml, circleHtml);
-bars(85, numberCss, progressingCss, circleCss);
-bars(70, numberJs, progressingJs, circleJs);
-bars(65, numberRj, progressingRj, circleRj);
+barSkill(90, numberHtml, progressingHtml, circleHtml);
+barSkill(85, numberCss, progressingCss, circleCss);
+barSkill(80, numberJs, progressingJs, circleJs);
+barSkill(75, numberReact, progressingReact, circleReact);
 
-changeDeveloper();
-changeProjects();
+renderDeveloper();
+renderProjects();

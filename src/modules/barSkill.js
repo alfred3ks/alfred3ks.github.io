@@ -1,5 +1,5 @@
 // Funcion para mostrar barrar de skill:
-const bars = (percentage, number, progressing, circle) => {
+const barSkill = (percentage, number, progressing, circle) => {
   let counter = 0;
   setInterval(() => {
     if (counter === percentage) {
@@ -13,4 +13,4 @@ const bars = (percentage, number, progressing, circle) => {
   }, 30);
 };
 
-export default bars;
+export default barSkill;

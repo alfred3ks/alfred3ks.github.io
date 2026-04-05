@@ -1,9 +1,9 @@
-import proj from './data/projects.json';
+import projects from '../data/projects.json';
 
 const projectsContainer = document.getElementById('projects__container');
 
-const changeProjects = () => {
-  proj.forEach((project) => {
+const renderProjects = () => {
+  projects.forEach((project) => {
     const cardContainer = document.createElement('div');
     const plantilla = `
             <h2 class="card__container-title">${project.title}</h2>
@@ -38,4 +38,4 @@ const changeProjects = () => {
   });
 };
 
-export default changeProjects;
+export default renderProjects;
