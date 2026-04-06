@@ -14,27 +14,23 @@
   box-shadow: 2px 2px 10px var(--shadow-color);
 }
 
-.header__title {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.header__name {
+  font-size: 2.4rem;
+  line-height: 1.8rem;
+  margin-left: 15px;
 }
 
-.header__title-name {
-  display: none;
+.header__name a {
+  text-decoration: none;
+  color: var(--text-secondary-color);
 }
 
-.header__title-img {
-  width: 65px;
-  height: 65px;
+.header__name-highlight {
+  color: var(--text-primary-color);
 }
 
-.header__title-img img {
-  border-radius: 50px;
-}
-
-/* Header button */
-.header__button {
+/* Header button  menu */
+.header__toggle {
   width: 45px;
   height: 35px;
   border: none;
@@ -49,27 +45,26 @@
   outline: var(--text-primary-color) solid 2px;
 }
 
-.header__button-1,
-.header__button-2 {
+.header__toggle-1,
+.header__toggle-2 {
   display: inline-block;
   width: 50%;
   height: 2.5px;
-  background-color: gold;
+  background-color: var(--line-primary-color);
   transition: 0.3s ease;
 }
 
-/* Transform menu hamburger */
-.change .header__button-1 {
+/* Transform menu hamburger  bars */
+.change .header__toggle-1 {
   transform: translateY(4.5px) rotateZ(45deg);
 }
 
-.change .header__button-2 {
+.change .header__toggle-2 {
   transform: translateY(-4.5px) rotateZ(-45deg);
 }
 
 /* Header Nav */
 .header__nav {
-  width: 75vw;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -81,25 +76,22 @@
   transition: transform 0.7s ease;
 }
 
-.header__nav ul {
-  height: 65vh;
+.header__list {
+  height: calc(100vh - 85px);
   list-style: none;
-  padding-left: 15px;
-  padding-right: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding-right: 0;
 }
 
-.header__nav ul a {
+.header__list a {
   font-size: 1.6rem;
   text-decoration: none;
   color: var(--text-secondary-color);
 }
 
-.header__nav-latest {
+.header__item--cta {
   border: var(--text-primary-color) solid 2px;
   border-radius: 4px;
   padding: 10px;
@@ -114,31 +106,18 @@
 /* Media queries */
 /* Tablet */
 @media screen and (width >=768px) {
-  .header__nav {
-    border-left: none;
-  }
-
-  .header__button {
+  .header__toggle {
     display: none;
   }
 
-  .header__title {
+  .header__brand {
     width: 290px;
   }
 
-  .header__title-name {
+  .header__name {
     display: block;
     font-size: 2.8rem;
     line-height: 1.8rem;
-  }
-
-  .header__title-name a {
-    text-decoration: none;
-    color: var(--text-secondary-color);
-  }
-
-  .header__title-name a span {
-    color: var(--text-primary-color);
   }
 
   .header__nav {
@@ -147,7 +126,7 @@
     height: 50px;
   }
 
-  .header__nav ul {
+  .header__list {
     height: 50px;
     padding: 0;
     flex-direction: row;
@@ -173,15 +152,15 @@
     width: 600px;
   }
 
-  .header__nav ul a {
+  .header__list a {
     font-size: 2rem;
   }
 
-  .header__nav ul a:hover {
+  .header__list a:hover {
     color: var(--text-primary-color);
   }
 
-  .header__nav-latest {
+  .header__item--cta {
     outline: var(--text-primary-color) solid 1px;
     border-radius: 4px;
     padding: 10px;

@@ -1,7 +1,7 @@
 'use strict';
 
 // Obtenemos boton y lista
-const menuButton = document.querySelector('#button');
+const menuButton = document.querySelector('#toggle');
 const menuList = document.querySelector('#list');
 const navLinks = document.querySelector('#list__hide');
 
