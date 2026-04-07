@@ -1,21 +1,21 @@
 [
   {
-    "name": "HTML",
+    "title": "HTML",
     "percentage": 90,
     "class": "html"
   },
   {
-    "name": "CSS",
+    "title": "CSS",
     "percentage": 85,
     "class": "css"
   },
   {
-    "name": "JAVASCRIPT",
+    "title": "JAVASCRIPT",
     "percentage": 85,
     "class": "js"
   },
   {
-    "name": "REACT",
+    "title": "REACT",
     "percentage": 75,
     "class": "react"
   }

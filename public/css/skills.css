@@ -27,14 +27,14 @@
   align-items: start;
 }
 
-.skill__progress-title {
+.skill__title {
   width: 40px;
   font-size: 1.6rem;
   letter-spacing: 1.2px;
   color: var(--text-secondary-color);
 }
 
-.skill__progress-container {
+.skill__container {
   margin: auto;
   position: relative;
   width: 100%;
@@ -44,7 +44,7 @@
   align-items: center;
 }
 
-.skill__progress-container--bar {
+.skill__bar {
   position: relative;
   top: 9px;
   width: 85%;
@@ -56,8 +56,6 @@
 
 .progressing__bar {
   height: 100%;
-  /* background-color: var(--text-primary-color);
-  background-color: red; */
   border-radius: 30px;
 }
 
@@ -97,21 +95,17 @@
   background: var(--primary-color-js);
 }
 
-
-
 .progressing__circle {
   position: absolute;
   width: 20px;
   height: 20px;
-  /* background: var(--text-secondary-color); */
-  /* background: red; */
   border: 3px solid var(--text-primary-color);
   border: 3px solid rgb(234, 234, 241);
   border-radius: 50%;
   transform: translateY(-5px) translateX(-5px);
 }
 
-.skill__progress-container--percent {
+.skill__percent {
   width: 35px;
   font-size: 1.8rem;
   color: var(--text-secondary-color);

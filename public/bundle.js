@@ -26,21 +26,6 @@ const changeYear = () => {
   date.textContent = now;
 };
 
-// Funcion para mostrar barrar de skill:
-const barSkill = (percentage, number, progressing, circle) => {
-  let counter = 0;
-  setInterval(() => {
-    if (counter === percentage) {
-      clearInterval();
-    } else {
-      counter += 1;
-      number.innerText = counter + '%';
-      progressing.style.width = counter + '%';
-      circle.style.left = counter + '%';
-    }
-  }, 30);
-};
-
 var developer = [
 	{
 		user_name: "Alfredo Sánchez",
@@ -105,6 +90,79 @@ const renderDeveloper = () => {
     aboutContainer.classList.add('about__container');
 
     aboutMe.append(aboutContainer);
+  });
+};
+
+var skills = [
+	{
+		title: "HTML",
+		percentage: 90,
+		"class": "html"
+	},
+	{
+		title: "CSS",
+		percentage: 85,
+		"class": "css"
+	},
+	{
+		title: "JAVASCRIPT",
+		percentage: 85,
+		"class": "js"
+	},
+	{
+		title: "REACT",
+		percentage: 75,
+		"class": "react"
+	}
+];
+
+// Función para animar la barra de skill
+const barSkill = (percentage, number, progressing, circle) => {
+  let counter = 0;
+
+  const interval = setInterval(() => {
+    if (counter >= percentage) {
+      clearInterval(interval);
+    } else {
+      counter += 1;
+      number.innerText = counter + '%';
+      progressing.style.width = counter + '%';
+      circle.style.left = counter + '%';
+    }
+  }, 50);
+};
+
+const skillsContainer = document.getElementById('skills__container');
+
+const renderSkills = () => {
+  skills.forEach((skill) => {
+    // Creamos directamente el div con clase correcta
+    const skillElement = document.createElement('div');
+    skillElement.classList.add('skill__progress');
+
+    // Template HTML de la skill
+    skillElement.innerHTML = `
+      <h6 class="skill__title">${skill.title}</h6>
+      <div class="skill__container">
+        <div class="skill__bar">
+          <div class="progressing__bar progressing__bar--${skill.class}">
+            <span class="progressing__circle progressing__circle--${skill.class}"></span>
+          </div>
+        </div>
+        <p class="skill__percent">0%</p>
+      </div>
+    `;
+
+    // Agregamos el elemento al DOM antes de hacer querySelector
+    skillsContainer.append(skillElement);
+
+    // Seleccionamos los elementos internos ya existentes en el DOM
+    const progressing = skillElement.querySelector('.progressing__bar');
+    const circle = skillElement.querySelector('.progressing__circle');
+    const percent = skillElement.querySelector('.skill__percent');
+
+    // Animación
+    barSkill(skill.percentage, percent, progressing, circle);
   });
 };
 
@@ -188,30 +246,9 @@ const renderProjects = () => {
   });
 };
 
-// Traemos las variables del HTML para las skills:
-const numberHtml = document.querySelector('#percent__html');
-const circleHtml = document.querySelector('#circle__html');
-const progressingHtml = document.querySelector('#progressing__html');
-
-const numberCss = document.querySelector('#percent__css');
-const circleCss = document.querySelector('#circle__css');
-const progressingCss = document.querySelector('#progressing__css');
-
-const numberJs = document.querySelector('#percent__js');
-const circleJs = document.querySelector('#circle__js');
-const progressingJs = document.querySelector('#progressing__js');
-
-const numberReact = document.querySelector('#percent__rj');
-const circleReact = document.querySelector('#circle__rj');
-const progressingReact = document.querySelector('#progressing__rj');
-
 // Ejecutamos las funciones:
 initMenu();
 changeYear();
-barSkill(90, numberHtml, progressingHtml, circleHtml);
-barSkill(85, numberCss, progressingCss, circleCss);
-barSkill(80, numberJs, progressingJs, circleJs);
-barSkill(75, numberReact, progressingReact, circleReact);
-
 renderDeveloper();
+renderSkills();
 renderProjects();
