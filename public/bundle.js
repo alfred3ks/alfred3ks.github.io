@@ -53,7 +53,7 @@ const renderDeveloper = () => {
   developer.forEach((dev) => {
     const aboutContainer = document.createElement('div');
 
-    const plantilla = `
+    const template = `
         <div class="about__image"></div>
         <div class="about__container-header">
           <div class="about__container-header--img">
@@ -86,7 +86,7 @@ const renderDeveloper = () => {
           </div>
         </div>`;
 
-    aboutContainer.innerHTML = plantilla;
+    aboutContainer.innerHTML = template;
     aboutContainer.classList.add('about__container');
 
     aboutMe.append(aboutContainer);
@@ -140,9 +140,8 @@ const renderSkills = () => {
     const skillElement = document.createElement('div');
     skillElement.classList.add('skill__progress');
 
-    // Template HTML de la skill
-    skillElement.innerHTML = `
-      <h6 class="skill__title">${skill.title}</h6>
+    const template = `
+    <h6 class="skill__title">${skill.title}</h6>
       <div class="skill__container">
         <div class="skill__bar">
           <div class="progressing__bar progressing__bar--${skill.class}">
@@ -150,8 +149,10 @@ const renderSkills = () => {
           </div>
         </div>
         <p class="skill__percent">0%</p>
-      </div>
-    `;
+      </div>`;
+
+    // Template HTML de la skill
+    skillElement.innerHTML = template;
 
     // Agregamos el elemento al DOM antes de hacer querySelector
     skillsContainer.append(skillElement);
@@ -213,7 +214,7 @@ const projectsContainer = document.getElementById('projects__container');
 const renderProjects = () => {
   projects.forEach((project) => {
     const cardContainer = document.createElement('div');
-    const plantilla = `
+    const template = `
             <h2 class="card__container-title">${project.title}</h2>
             <div class="card__container-img">
               <a href="${project.url_web}" target="_blank"
@@ -239,7 +240,7 @@ const renderProjects = () => {
             </div>
 `;
 
-    cardContainer.innerHTML = plantilla;
+    cardContainer.innerHTML = template;
     cardContainer.classList.add('card__container');
 
     projectsContainer.append(cardContainer);

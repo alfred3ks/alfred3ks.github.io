@@ -9,9 +9,8 @@ const renderSkills = () => {
     const skillElement = document.createElement('div');
     skillElement.classList.add('skill__progress');
 
-    // Template HTML de la skill
-    skillElement.innerHTML = `
-      <h6 class="skill__title">${skill.title}</h6>
+    const template = `
+    <h6 class="skill__title">${skill.title}</h6>
       <div class="skill__container">
         <div class="skill__bar">
           <div class="progressing__bar progressing__bar--${skill.class}">
@@ -19,8 +18,10 @@ const renderSkills = () => {
           </div>
         </div>
         <p class="skill__percent">0%</p>
-      </div>
-    `;
+      </div>`;
+
+    // Template HTML de la skill
+    skillElement.innerHTML = template;
 
     // Agregamos el elemento al DOM antes de hacer querySelector
     skillsContainer.append(skillElement);

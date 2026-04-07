@@ -5,7 +5,7 @@ const projectsContainer = document.getElementById('projects__container');
 const renderProjects = () => {
   projects.forEach((project) => {
     const cardContainer = document.createElement('div');
-    const plantilla = `
+    const template = `
             <h2 class="card__container-title">${project.title}</h2>
             <div class="card__container-img">
               <a href="${project.url_web}" target="_blank"
@@ -31,7 +31,7 @@ const renderProjects = () => {
             </div>
 `;
 
-    cardContainer.innerHTML = plantilla;
+    cardContainer.innerHTML = template;
     cardContainer.classList.add('card__container');
 
     projectsContainer.append(cardContainer);

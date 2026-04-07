@@ -6,7 +6,7 @@ const renderDeveloper = () => {
   developer.forEach((dev) => {
     const aboutContainer = document.createElement('div');
 
-    const plantilla = `
+    const template = `
         <div class="about__image"></div>
         <div class="about__container-header">
           <div class="about__container-header--img">
@@ -39,7 +39,7 @@ const renderDeveloper = () => {
           </div>
         </div>`;
 
-    aboutContainer.innerHTML = plantilla;
+    aboutContainer.innerHTML = template;
     aboutContainer.classList.add('about__container');
 
     aboutMe.append(aboutContainer);
