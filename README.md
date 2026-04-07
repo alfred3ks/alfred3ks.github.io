@@ -1,40 +1,49 @@
-## **Mi Portafolio** 🌟 🚀 🎯
+## 🌟 Mi Portafolio
 
 Bienvenido a mi portafolio web.
+Aquí muestro mis proyectos, habilidades y evolución como desarrollador frontend.
 
-Aquí encontrarás una recopilación de mis proyectos, habilidades y experiencia como desarrollador web. Mi objetivo es crear soluciones funcionales y atractivas que marquen la diferencia.
+---
 
-### **Sobre mí**
+### 🚀 Sobre mí
 
-- 💻 Especializado en el desarrollo web con un enfoque en **React** y tecnologías frontend modernas.
-- 🚀 En camino de construir mi propia empresa en el sector tecnológico.
+Desarrollador web enfocado en **React** y tecnologías modernas de frontend.
+Me centro en crear aplicaciones **escalables, limpias y con buena experiencia de usuario**.
 
-### **Características de este portafolio**
+Actualmente, trabajando en mejorar mis habilidades y construir proyectos con impacto real.
 
-- Diseño responsivo y optimizado para diferentes dispositivos.
-- Proyectos destacados con descripciones y enlaces a repositorios.
-- Una sección dedicada a mi experiencia, habilidades y formación.
+---
 
-### **Tecnologías utilizadas**
+### 🧩 Características
 
-- **Frontend**: HTML, CSS, JavaScript.
-- **Backend**: Node.js.
-- **Herramientas adicionales**: Git, VSCode.
+- Diseño **responsive** adaptable a cualquier dispositivo
+- Proyectos reales con código y demos
+- Secciones de habilidades, experiencia y formación
+- Código organizado y mantenible
 
-### **Cómo usar este portafolio**
+---
 
-1. Visita mi portafolio en: [https://alfred3ks.github.com](https://alfred3ks.github.io/).
-2. Explora los proyectos destacados y mi experiencia.
-3. Si te interesa colaborar, no dudes en contactarme.
+### 🛠️ Tecnologías
 
-### **Contacto**
+- **Frontend:** HTML, CSS, JavaScript, React
+- **Backend:** Node.js
+- **Herramientas:** Git, Vite, VS Code
 
-- 🐦 Twitter: [@alfred3ks](https://twitter.com/alfred3ks)
-- 📧 Email: alfred3ks@gmail.com
-- 🌐 Mi portafolio: ([Mi porfolio](https://alfred3ks.github.io/)).
+---
 
-### **Gracias por visitar mi portafolio**
+### 🌐 Demo
 
-Espero que encuentres interesante mi trabajo. Si tienes algún proyecto o idea en mente, ¡estaré encantado de colaborar!
+👉 [Ver portafolio](https://alfred3ks.github.io/)
 
-### Alfredo Sánchez | @alfred3ks 👋 🎯 🚀
+---
+
+### 📬 Contacto
+
+- 🐦 [Twitter](https://twitter.com/alfred3ks)
+- 📧 alfred3ks@gmail.com
+
+---
+
+### 👋 Sobre el proyecto
+
+Este portafolio está en constante evolución como parte de mi aprendizaje y crecimiento como desarrollador.
