@@ -1,0 +1,22 @@
+[
+  {
+    "name": "HTML",
+    "percentage": 90,
+    "class": "html"
+  },
+  {
+    "name": "CSS",
+    "percentage": 85,
+    "class": "css"
+  },
+  {
+    "name": "JAVASCRIPT",
+    "percentage": 85,
+    "class": "js"
+  },
+  {
+    "name": "REACT",
+    "percentage": 75,
+    "class": "react"
+  }
+]
